@@ -57,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : 
+  username               :
 facebook:
   username               :
   app_id                 :
@@ -85,10 +85,11 @@ author:
   bio              : "Graduate Student in Cosmology"
   location         : "Princeton, New Jersey"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
+  pubmed           :
+  googlescholar    : # "http://yourfullgooglescholarurl.com"
+  email            : "ohep2@alumni.cam.ac.uk"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  arxiv            : "http://arxiv.org/a/philcox_o_1"
   uri              :
   bitbucket        :
   codepen          :
@@ -96,17 +97,17 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "oliverphilcox"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0000-0002-3033-9932"
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    :
   steam            :
   tumblr           :
   twitter          : "replacethistwitterhandle"
