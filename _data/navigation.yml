@@ -1,8 +1,8 @@
 # main links links
 main:
 
-  - title: "Publications"
-    url: /talks/
+  - title: "Research"
+    url: /research/
 
   - title: "Talks"
     url: /talks/
@@ -12,6 +12,3 @@ main:
 
   - title: "Code"
     url: /code/
-
-  - title: "Contact"
-    url: /contact/
