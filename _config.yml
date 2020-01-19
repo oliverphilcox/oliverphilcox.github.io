@@ -89,7 +89,6 @@ author:
   googlescholar    : # "http://yourfullgooglescholarurl.com"
   email            : "ohep2@alumni.cam.ac.uk"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
-  arxiv            : "http://arxiv.org/a/philcox_o_1"
   uri              :
   bitbucket        :
   codepen          :
@@ -110,7 +109,7 @@ author:
   stackoverflow    :
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          :
   vine             :
   weibo            :
   xing             :
@@ -228,15 +227,15 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
+  # # _portfolio
+  # - scope:
+  #     path: ""
+  #     type: portfolio
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     share: true
+  #     comment: true
   # _talks
   - scope:
       path: ""
