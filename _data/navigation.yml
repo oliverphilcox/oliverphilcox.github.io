@@ -4,11 +4,8 @@ main:
   - title: "Research"
     url: /research/
 
-  - title: "Talks"
-    url: /talks/
+  - title: "Code"
+    url: /code/
 
   - title: "CV"
     url: /cv/
-
-  - title: "Code"
-    url: /code/
