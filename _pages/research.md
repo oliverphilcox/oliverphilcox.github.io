@@ -5,12 +5,12 @@ permalink: /research/
 author_profile: true
 ---
 
-Measuring Small-Scale Power Spectra
+*See [here](http://arxiv.org/a/philcox_o_1) for the most current list of papers*
+
+Measuring and Modeling Galaxy Clustering Statistics
 ------------------------------------
 [Philcox & Eisenstein 2019](https://arxiv.org/abs/1912.01010)
 
-Estimating Galaxy Correlation Function Covariances
---------------------------------------------------
 [Philcox et al. 2019](https://arxiv.org/abs/1904.11070)
 [Philcox & Eisenstein 2019](https://arxiv.org/abs/1910.04764)
 
