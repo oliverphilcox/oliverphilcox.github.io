@@ -7,7 +7,7 @@ author_profile: true
 
 *See [here](http://arxiv.org/a/philcox_o_1) for the most current list of papers*
 
-Combining Full-Shape and BAO Analyses of Galaxy Power Spectra to constrain Cosmology
+Combining Full-Shape and BAO Analyses of Galaxy Power Spectra to Constrain Cosmology
 -------------------------------------------------------------------------------
 
 Most analyses of galaxy surveys rely on extracting information from the galaxy power spectrum, either by looking at the position of the Baryon Acoustic Oscillation (BAO) peaks, or the broadband Full Shape (FS). BAO analyses are assisted by *reconstruction* of the galaxy density field, first proposed in [Eisenstein et al. 2006](https://arxiv.org/abs/astro-ph/0604362), which effectively 'undoes' the effects of long wavelength displacements, shifting galaxies closer to their Lagrangian-space positions. Whilst this yields a sharper BAO peak, the broadband shape is difficult to model perturbatively, thus a full-shape analysis of reconstructed spectra is infeasible. In [Philcox et al. 2020](https://arxiv.org/abs/2002.04035), we perform a joint analysis of pre- and post-reconstruction galaxy power spectra, extracting geometric Alcock-Paczynski parameters from the BAO peaks of the reconstructed power spectrum and using this to inform an FS analysis of the unreconstructed spectrum via a joint covariance matrix. We additionally introduce a new method for obtaining constraints from reconstructed spectra based on a correlated theoretical error, which is shown to be simple, robust, and applicable to any flavor of density-field reconstruction.
