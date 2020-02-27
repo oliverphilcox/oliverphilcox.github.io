@@ -12,7 +12,7 @@ redirect_from:
 HIPSTER
 --------
 
-[HIPSTER](https://Hipster.readthedocs.io) (HIgh-k Power Spectrum EstimatoR) is a fast C++ code to compute galaxy power spectra from surveys of arbitrary shapes, based on [Philcox & Eisenstein 2019](https://arxiv.org/abs/1912.01010). This is optimized for *small-scale* power spectrum computation, since it uses a configuration-space algorithm to compute the power as a weighted pair count, rather than using Fast Fourier Transforms (FFTs). As such, it doesn't suffer from many of the common problems of FFTs; aliasing, shot-noise and window function convolution. A variant of HIPSTER optimized for computing the power spectrum and bispectrum in N-body simulations is currently in creation. Extensive documentation is provided for HIPSTER, and it can be run in a single line of code.
+[HIPSTER](https://Hipster.readthedocs.io) (HIgh-k Power Spectrum EstimatoR) is a fast C++ code to compute galaxy power spectra and bispectra from surveys of arbitrary shapes, based on [Philcox & Eisenstein 2019](https://arxiv.org/abs/1912.01010). These are optimized for *small-scale* spectral computation, since they use a configuration-space algorithm to compute the spectra as a weighted pair count, rather than using Fast Fourier Transforms (FFTs). As such, it doesn't suffer from many of the common problems of FFTs; aliasing, shot-noise and window function convolution. For computing the power spectrum and bispectrum in cosmological simulations (with periodic boundary conditions), we include a variant of HIPSTER with minimal dependence on random particles. Extensive documentation is provided for HIPSTER, and it can be run in a single line of code.
 
 
 RascalC
