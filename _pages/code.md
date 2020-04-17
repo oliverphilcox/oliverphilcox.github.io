@@ -9,11 +9,15 @@ redirect_from:
 
 {% include base_path %}
 
+EffectiveHalos
+---------------
+
+[EffectiveHalos](https://EffectiveHalos.readthedocs.io) is a fast Python code to accurately compute the matter power spectrum and halo covariances across a large range of scales using the Effective Halo model developed in [Philcox et al. 2020](coming soon). The matter power spectrum is *percent-level accurate* for scales between 0.02 and 1 h/Mpc for a variety of cosmologies, and uses Effective Field Theory to generate a model for the quasi-linear power spectrum which is combined with halo model terms. In addition, the code can be used to compute the covariance between halo number counts in two mass bins, or the covariance between halo number counts and the matter power spectrum. This includes all relevant effects; the intrinsic covariance, halo exclusion and super-sample effects. The code is simple to run, with a tutorial and full API documentation available online.
+
 HIPSTER
 --------
 
-[HIPSTER](https://Hipster.readthedocs.io) (HIgh-k Power Spectrum EstimatoR) is a fast C++ code to compute galaxy power spectra and bispectra from surveys of arbitrary shapes, based on [Philcox & Eisenstein 2019](https://arxiv.org/abs/1912.01010). These are optimized for *small-scale* spectral computation, since they use a configuration-space algorithm to compute the spectra as a weighted pair count, rather than using Fast Fourier Transforms (FFTs). As such, it doesn't suffer from many of the common problems of FFTs; aliasing, shot-noise and window function convolution. For computing the power spectrum and bispectrum in cosmological simulations (with periodic boundary conditions), we include a variant of HIPSTER with minimal dependence on random particles. Extensive documentation is provided for HIPSTER, and it can be run in a single line of code.
-
+[HIPSTER](https://Hipster.readthedocs.io) (HIgh-k Power Spectrum EstimatoR) is a fast C++ code to compute galaxy power spectra and bispectra from surveys of arbitrary shapes, based on [Philcox & Eisenstein 2019](https://arxiv.org/abs/1912.01010) and [Philcox 2020](coming soon). These have quadratic order and are optimized for *small-scale* spectral computation, since they use a configuration-space algorithm to compute the spectra as weighted pair counts, rather than using Fast Fourier Transforms (FFTs). As such, they doesn't suffer from many of the common problems of FFTs; aliasing, shot-noise and window function convolution. For computing the power spectrum and bispectrum in cosmological simulations (with periodic boundary conditions), we include a variant of HIPSTER with minimal dependence on random particles. Extensive documentation is provided for HIPSTER, and it can be run in a single line of code.
 
 RascalC
 --------
@@ -24,7 +28,6 @@ HADES
 ------
 
 [HADES](https://github.com/oliverphilcox/HADES) (Hexadecapolar Analysis for Dust Estimation in Simulations) follows the work of [Philcox et al. 2018](https://arxiv.org/abs/1805.09177), using polarized dust anisotropy properties to measure the amount of dust contamination in Cosmic Microwave Background (CMB) B-mode maps. In particular, it allows for discrimination between unsubstracted dust and Inflationary Gravitational Waves (IGWs) well below the current constraints on IGW amplitudes. A basic tutorial is provided online.
-
 
 Chempy
 ------
