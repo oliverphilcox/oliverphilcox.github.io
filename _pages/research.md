@@ -7,6 +7,12 @@ author_profile: true
 
 *See [here](http://arxiv.org/a/philcox_o_1) for the most current list of papers*
 
+
+Understanding the Marked Power Spectrum with Perturbation Theory
+------------------------------------------------------------------
+
+Recently, it has been shown that the [marked power spectrum](https://arxiv.org/abs/2001.11024) can place far tighter constraints on cosmological parameters (particularly the neutrino mass) than the conventional power spectrum. What new information does it contain beyond conventional statistics? In [Philcox et al. 2020c](https://arxiv.org/abs/2006.10055), we find that the mark induces a significant coupling between small-scale non-Gaussianities and large scales, leading to the additional information content. To make sense of this, we derive a model using one-loop perturbation theory, which is compared with N-body simulations. Unlike the usual power spectrum, there is no well-defined convergence radius of the theory, due to the mixing of large and small scales. To make full use of the marked power spectrum, the theory must be extended to higher perturbative order, including biased tracers and redshift space distortions. However, due to the scale mixing, we may have important contributions from baryonic effects even on large scales: these will need to be studied before the full power of this tool can be realized.
+
 The Effective Halo Model: Accurate Models for the Matter Power Spectrum and Cluster Counts
 -------------------------------------------------------------------------------------------
 
