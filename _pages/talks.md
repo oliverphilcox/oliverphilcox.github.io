@@ -5,9 +5,6 @@ permalink: /talks/
 author_profile: true
 ---
 
-Recent Talks
-==============
-
 1. What's Next for the Effective Field Theory of Large Scale Structure? [Slides](http://oliverphilcox.github.io/files/future_eft.pdf), [Video](http://pirsa.org/20060054)
 
 2. The Effective Halo Model: Accurate Models for the Power Spectrum and Cluster Count Covariances [Slides](http://oliverphilcox.github.io/files/ehm.pdf)
