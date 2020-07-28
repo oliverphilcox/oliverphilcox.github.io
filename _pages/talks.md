@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 Recent Talks
--------------
+==============
 
 1. What's Next for the Effective Field Theory of Large Scale Structure? [Slides](http://oliverphilcox.github.io/files/future_eft.pdf), [Video](http://pirsa.org/20060054)
 
