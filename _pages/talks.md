@@ -13,4 +13,4 @@ author_profile: true
 
 4. Detection and Removal of CMB B-mode Dust Foregrounds with Signatures of Statistical Anisotropy ([Slides](http://oliverphilcox.github.io/files/dust_aniso.pdf))
 
-5. Inferring Galactic Parameters from Chemical Abundances ([Slides](http://oliverphilcox.github.io/files/chem_evol.pdf))
+5. Inferring Galactic Parameters from Chemical Abundances ([Slides (15 mins)](http://oliverphilcox.github.io/files/asa_talk.pdf), [Slides (45 mins)](http://oliverphilcox.github.io/files/chem_evol.pdf))
