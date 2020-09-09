@@ -5,7 +5,7 @@ permalink: /talks/
 author_profile: true
 ---
 
-1. Measuring H0 from Galaxy Surveys: With and Without the Sound Horizon ([Slides](http://oliverphilcox.github.io/files/cosm_from_home.pdf))
+1. Measuring H0 from Galaxy Surveys: With and Without the Sound Horizon ([Slides](http://oliverphilcox.github.io/files/cosm_from_home.pdf), [Video](https://www.youtube.com/embed/QM_pGTMhJTc))
 
 2. What's Next for the Effective Field Theory of Large Scale Structure? ([Slides](http://oliverphilcox.github.io/files/future_eft.pdf), [Video](http://pirsa.org/20060054))
 
