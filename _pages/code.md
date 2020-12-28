@@ -27,7 +27,7 @@ RascalC
 CLASS-PT
 ---------
 
-[CLASS-PT](https://michalychforever.github.com/CLASS-PT) is an extension of [CLASS](https://class-code.net) used to compute one-loop perturbation theory for matter and biased tracers in real and redshift space, described in [Chudaykin et al. 2020](https://arxiv.org/abs/2004.10607). TO COMPLETE
+[CLASS-PT](https://michalychforever.github.com/CLASS-PT) is an extension of [CLASS](https://class-code.net) used to compute one-loop perturbation theory for matter and biased tracers in real and redshift space, described in [Chudaykin et al. 2020](https://arxiv.org/abs/2004.10607). It has been used in a number of works and can be interfaced with the [MontePython](https://github.com/brinckmann/montepython_public) for fast MCMC sampling. Various custom-built likelihoods for BOSS and Euclid galaxy power spectra are available on [Github](https://github.com/michalychforever/lss_montepython).
 
 HADES
 ------
