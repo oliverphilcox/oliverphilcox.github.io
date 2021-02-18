@@ -5,7 +5,12 @@ permalink: /research/
 author_profile: true
 ---
 
-*See [here](http://arxiv.org/a/philcox_o_1) for the most current list of papers*
+*See [here](http://arxiv.org/a/philcox_o_1) for an up-to-date list of first-author papers*
+
+Improving the Line-of-Sight for Galaxy Two-Point Correlators
+-------------------------------------------------------------
+
+Under the assumptions of homogeneity and isotropy, the galaxy two-point correlator (either the two-point correlation function (2PCF) or power spectrum) depends on only one parameter: the galaxy pair separation. Redshift space distortions introduce anisotropy, requiring a second degree of freedom: the angle between the galaxy pair and the line-of-sight (LoS). Various options exist to define the LoS, the most popular being the approximation of [Yamamoto et al. 2006](https://arxiv.org/abs/astro-ph/0505115), whereupon on fixes the LoS to the direction vector of one of the galaxies in the pair. Whilst this results in a simple-to-implement estimator, it incurs an error at second order in the survey opening angle, which may become important for future surveys such as DESI. In [Philcox & Slepian 2021](https://arxiv.org/abs/2102.08384), we consider two alternative LoS choices: the galaxy midpoint and the angle bisector. Both incur errors only at fourth order in the opening angle, but their naive implementation results in a prohibitively slow algorithm. Using newly defined series expansions for spherical harmonics and Legendre polynomials, we recast the 2PCF and power spectrum estimators in a form allowing for fast computation using FFTs, and demonstrate their applicability using BOSS-like mock catalogs.
 
 Optimal Estimators for the Unwindowed Galaxy Power Spectrum
 ------------------------------------------------------------
