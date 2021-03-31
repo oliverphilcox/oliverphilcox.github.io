@@ -7,6 +7,11 @@ author_profile: true
 
 *See [here](http://arxiv.org/a/philcox_o_1) for an up-to-date list of first-author papers*
 
+Solving Transcendental Equations with Contour Integration
+----------------------------------------------------------
+
+Transcendental equations are ubiquitous in the physical sciences. Two classic examples are the spherical collapse of a homogeneous sphere of gas under gravity and the evolution of elliptical orbits, via Kepler's law. In both cases, the underlying equations cannot be directly solved via conventional methods, thus they are often implemented numerically, via root-finding. In [Slepian & Philcox 2021](https://arxiv.org/abs/2103.09823) and [Philcox et al. 2021](https://arxiv.org/abs/2103.15829), we show that exact solutions for both problems can be obtained as ratios of contour integrals, using mathematics developed to solve the 'geometric goat problem' in [Ullisch 2020](https://link.springer.com/article/10.1007%2Fs00283-020-09966-0). Each can be practically evaluated using FFTs or numerical integration, and the solution is significantly faster to evaluate than if conventional methods are used. The approach can be applied to a variety of other transcendental equations, provided certain conditions are met. 
+
 Improving the Line-of-Sight for Galaxy Two-Point Correlators
 -------------------------------------------------------------
 
