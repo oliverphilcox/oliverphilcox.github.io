@@ -19,7 +19,7 @@ encore
 Kepler's Goat Herd
 -------------------
 
-[Kepler's Goat Herd](https://github.com/oliverphilcox/KeplersGoatHerd) is a C++ code which uses the method of [Philcox et al. 2021](https://arxiv.org/abs/2103.15829) to solve Kepler's equation for elliptical orbit evolution. The code performs the relevant contour integrals numerically, and compares the results to conventional methods based on root-finding and series solutions. Our method is found to be around twice the speed of a quartic root-finder for the same level of accuracy.
+[Kepler's Goat Herd](https://github.com/oliverphilcox/Keplers-Goat-Herd) is a C++ code which uses the method of [Philcox et al. 2021](https://arxiv.org/abs/2103.15829) to solve Kepler's equation for elliptical orbit evolution. The code performs the relevant contour integrals numerically, and compares the results to conventional methods based on root-finding and series solutions. Our method is found to be around twice the speed of a quartic root-finder for the same level of accuracy.
 
 
 EffectiveHalos
