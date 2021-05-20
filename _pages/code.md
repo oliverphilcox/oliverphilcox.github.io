@@ -13,14 +13,13 @@ redirect_from:
 encore
 -------
 
-[*encore*](https://github.com/oliverphilcox/encore) is a C++ code which computes the isotropic N-point correlation functions (NPCFs) of a set of N_g discrete points (e.g., a galaxy survey) using the O(N_g^2) method of Slepian et al. (in prep.). The code supports N = 2, 3, 4, 5 and 6, and can additionally subtract the Gaussian contribution of the 4PCF at the estimator-level. It is fast, making use of OpenMP parallelization, AVX assembly code, and, for the higher-point functions, GPU acceleration, allowing computation of the full 4PCF for a BOSS-like survey in only a few tens of CPU-hours.
+[*encore*](https://github.com/oliverphilcox/encore) is a C++ code which computes the isotropic N-point correlation functions (NPCFs) of a set of N_g discrete points (e.g., a galaxy survey) using the O(N_g^2) method of [Philcox et al. 2021](http://arxiv.org/abs/2105.08722). The code supports N = 2, 3, 4, 5 and 6, and can additionally subtract the Gaussian contribution of the 4PCF at the estimator-level. It is fast, making use of OpenMP parallelization, AVX assembly code, and, for the higher-point functions, GPU acceleration, allowing computation of the full 4PCF for a BOSS-like survey in only a few tens of CPU-hours.
 
 
 Kepler's Goat Herd
 -------------------
 
 [Kepler's Goat Herd](https://github.com/oliverphilcox/Keplers-Goat-Herd) is a C++ code which uses the method of [Philcox et al. 2021](https://arxiv.org/abs/2103.15829) to solve Kepler's equation for elliptical orbit evolution. The code performs the relevant contour integrals numerically, and compares the results to conventional methods based on root-finding and series solutions. Our method is found to be around twice the speed of a quartic root-finder for the same level of accuracy.
-
 
 EffectiveHalos
 ---------------
