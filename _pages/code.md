@@ -13,7 +13,7 @@ redirect_from:
 encore
 -------
 
-[*encore*](https://github.com/oliverphilcox/encore) is a C++ code which computes the isotropic N-point correlation functions (NPCFs) of a set of N_g discrete points (e.g., a galaxy survey) using the O(N_g^2) method of [Philcox et al. 2021](http://arxiv.org/abs/2105.08722). The code supports N = 2, 3, 4, 5 and 6, and can additionally subtract the Gaussian contribution of the 4PCF at the estimator-level. It is fast, making use of OpenMP parallelization, AVX assembly code, and, for the higher-point functions, GPU acceleration, allowing computation of the full 4PCF for a BOSS-like survey in only a few tens of CPU-hours.
+[*encore*](https://github.com/oliverphilcox/encore) is a C++ code which computes the isotropic N-point correlation functions (NPCFs) of a set of N_g discrete points (e.g., a galaxy survey) using the O(N_g^2) method of [Philcox et al. 2021](http://arxiv.org/abs/2105.08722). The code supports N = 2, 3, 4, 5 and 6, and can additionally subtract the Gaussian contribution of the 4PCF at the estimator-level. It is fast, making use of OpenMP parallelization, AVX assembly code, and, for the higher-point functions, GPU acceleration, allowing computation of the full 4PCF for a BOSS-like survey in only a few tens of CPU-hours. It may further be extended to anisotropic NPCFs, following the methods of [Philcox & Slepian 2021b](https://arxiv.org/abs/2106.10278).
 
 
 Kepler's Goat Herd
