@@ -15,6 +15,10 @@ encore
 
 [*encore*](https://github.com/oliverphilcox/encore) is a C++ code which computes the isotropic N-point correlation functions (NPCFs) of a set of N_g discrete points (e.g., a galaxy survey) using the O(N_g^2) method of [Philcox et al. 2021](http://arxiv.org/abs/2105.08722). The code supports N = 2, 3, 4, 5 and 6, and can additionally subtract the Gaussian contribution of the 4PCF at the estimator-level. It is fast, making use of OpenMP parallelization, AVX assembly code, and, for the higher-point functions, GPU acceleration, allowing computation of the full 4PCF for a BOSS-like survey in only a few tens of CPU-hours. It may further be extended to anisotropic NPCFs, following the methods of [Philcox & Slepian 2021b](https://arxiv.org/abs/2106.10278).
 
+BOSS Without Windows
+---------------------
+
+The [*BOSS Without Windows*](https://github.com/oliverphilcox/encore) repository contains the analysis code required to compute the galaxy power spectrum and bispectrum using optimal quadratic and cubic estimators, as descibed in [Philcox 2020b](https://arxiv.org/abs/2012.09389) and [Philcox 2021](https://arxiv.org/abs/2107.06287). The output measurements (which will be provided for the BOSS data-set and Patchy simulations) do not include the survey window functions, thus can be easily compared to theory models. Additionally, they give close-to-minimum-variance measurements of the power spectrum and bispectrum, which is particularly useful on small-scales. The code is written in Python, with some routines borrowed from [nbodykit](https://nbodykit.readthedocs.io/en/latest/). To compute the statistics, one requires only the survey mask, the data, and a random particle catalog.
 
 Kepler's Goat Herd
 -------------------
