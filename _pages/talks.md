@@ -5,7 +5,7 @@ permalink: /talks/
 author_profile: true
 ---
 
-1. Cosmology from the Galaxy Four-Point Correlation Function ([Slides](http://oliverphilcox.github.io/files/cosm_from_home21.pdf))
+1. Cosmology from the Galaxy Four-Point Correlation Function ([Slides](http://oliverphilcox.github.io/files/cosm_from_home21.pdf), [Video](https://www.youtube.com/watch?v=pmo1QigLsn4))
 
 2. Have We Exhausted the Galaxy Two-Point Function? ([Slides](http://oliverphilcox.github.io/files/geneva_pk_talk.pdf))
 
