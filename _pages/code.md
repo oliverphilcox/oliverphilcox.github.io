@@ -10,6 +10,11 @@ redirect_from:
 {% include base_path %}
 
 
+NPCFs.jl
+---------
+
+[*NPCFs.jl*](https://github.com/oliverphilcox/NPCFs.jl) is a Julia code to compute N-point correlation functions for a range of values of N, in a variety of dimensions and spatial curvatures. This implements two algorithms described in [Philcox & Slepian 2021b](https://arxiv.org/abs/2106.10278) to compute the NPCF of n points; a slow O(n^N) approach, counting all n^N tuplets of points, and an efficient O(n^2) approach, making use of hyperspherical harmonic decomposition to split the summation into one over pairs of particles. The code features full parallelization, both inside and between nodes, and currently includes support for isotropic 2PCFs, 3PCFs, 4PCFs and 5PCFs in 2D, 3D and 4D Euclidean geometries, and 2D spherical geometries. Application to other scenarios, such as anisotropic NPCFs and more dimensions, can be straightforwardly added.
+
 encore
 -------
 
