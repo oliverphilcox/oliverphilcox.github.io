@@ -5,7 +5,7 @@ permalink: /talks/
 author_profile: true
 ---
 
-1. Large Scale Structure Beyond the Two-Point Function (Job Talk, slides coming soon)
+1. Large Scale Structure Beyond the Two-Point Function ([Job Talk Slides](http://oliverphilcox.github.io/files/cosm_from_home21.pdf))
 
 2. Cosmology from the Galaxy Four-Point Correlation Function ([Slides](http://oliverphilcox.github.io/files/cosm_from_home21.pdf), [Video](https://www.youtube.com/watch?v=pmo1QigLsn4))
 
