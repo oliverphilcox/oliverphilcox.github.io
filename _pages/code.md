@@ -24,6 +24,11 @@ encore
 
 [*encore*](https://github.com/oliverphilcox/encore) is a C++ code which computes the isotropic N-point correlation functions (NPCFs) of a set of N_g discrete points (e.g., a galaxy survey) using the O(N_g^2) method of [Philcox et al. 2021](http://arxiv.org/abs/2105.08722). The code supports N = 2, 3, 4, 5 and 6, and can additionally subtract the Gaussian contribution of the 4PCF at the estimator-level. It is fast, making use of OpenMP parallelization, AVX assembly code, and, for the higher-point functions, GPU acceleration, allowing computation of the full 4PCF for a BOSS-like survey in only a few tens of CPU-hours. It may further be extended to anisotropic NPCFs, following the methods of [Philcox & Slepian 2021b](https://arxiv.org/abs/2106.10278).
 
+CLASS-PT
+---------
+
+[CLASS-PT](https://michalychforever.github.com/CLASS-PT) is an extension of [CLASS](https://class-code.net) used to compute one-loop perturbation theory for matter and biased tracers in real and redshift space, described in [Chudaykin et al. 2020](https://arxiv.org/abs/2004.10607). It has been used in a number of works and can be interfaced with the [MontePython](https://github.com/brinckmann/montepython_public) for fast MCMC sampling. Custom-built likelihoods for full-shape power spectrum and bispectrum analyses are available on [Github](https://github.com/oliverphilcox/full_shape_likelihoods).
+
 Kepler's Goat Herd
 -------------------
 
@@ -43,11 +48,6 @@ RascalC
 --------
 
 [RascalC](https://RascalC.readthedocs.io) is a C++ code to quickly compute covariance matrices of galaxy two- and three-point correlation functions in arbitrary survey geometries, based on ([Philcox et al. 2019](https://arxiv.org/abs/1904.11070); [Philcox & Eisenstein 2019](https://arxiv.org/abs/1910.04764)). This is a fast Monte Carlo integrator of the relevant 12-18 dimensional integrals, and has been shown to give highly accurate covariances in a fraction of the time required from mock catalogs, fully taking into account anisotropies from the survey window. Covariances can be computed both for correlation functions in Legendre multipoles, correlation functions in angular bins and jackknife correlation functions. This is currently being used by a number of teams, including eBOSS, and extensive documentation is available online.
-
-CLASS-PT
----------
-
-[CLASS-PT](https://michalychforever.github.com/CLASS-PT) is an extension of [CLASS](https://class-code.net) used to compute one-loop perturbation theory for matter and biased tracers in real and redshift space, described in [Chudaykin et al. 2020](https://arxiv.org/abs/2004.10607). It has been used in a number of works and can be interfaced with the [MontePython](https://github.com/brinckmann/montepython_public) for fast MCMC sampling. Various custom-built likelihoods for BOSS and Euclid galaxy power spectra are available on [Github](https://github.com/michalychforever/lss_montepython).
 
 HADES
 ------
