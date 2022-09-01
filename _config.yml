@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Oliver Philcox"
 title_separator          : "-"
 name                     : &name "Oliver Philcox"
-description              : &description "Princeton Graduate Student in Cosmology"
+description              : &description "Simons Society (Junior Fellow) // Columbia (Postdoc)"
 url                      : https://oliverphilcox.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "oliverphilcox/oliverphilcox.github.io"
@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Oliver Philcox"
   avatar           : "headshot_full.jpg"
-  bio              : "Graduate Student in Cosmology"
-  location         : "Princeton, New Jersey"
+  bio              : "Simons Society (Junior Fellow) // Columbia (Postdoc)"
+  location         : "New York City"
   employer         :
   pubmed           :
   googlescholar    : # "http://yourfullgooglescholarurl.com"
