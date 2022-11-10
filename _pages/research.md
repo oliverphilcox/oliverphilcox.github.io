@@ -5,7 +5,7 @@ permalink: /research/
 author_profile: true
 ---
 
-*See [here](http://arxiv.org/a/philcox_o_1) for an up-to-date list of first-author papers*
+*See [here](http://arxiv.org/a/philcox_o_1) for an up-to-date list of first-author papers. Summaries of some recent works can be found below*
 
 Cosmology from the Galaxy Power Spectrum and Bispectrum: Estimators and Results
 --------------------------------------------------------------------------------
