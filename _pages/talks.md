@@ -5,7 +5,7 @@ permalink: /talks/
 author_profile: true
 ---
 
-1. The Effective Field Theory of Large Scale Structure: A User's Guide ([Slides](http://oliverphilcox/github/files/eft_talk.pdf))
+1. The Effective Field Theory of Large Scale Structure: A User's Guide ([Slides](http://oliverphilcox.github.io/files/eft_talk.pdf))
 
 2. Hints of Cosmological Parity Violation ([Slides](http://oliverphilcox.github.io/files/parity.pdf))
 
