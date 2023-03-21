@@ -9,10 +9,20 @@ redirect_from:
 
 {% include base_path %}
 
-BOSS Without Windows
+PolyBin
+--------
+
+[*PolyBin*](https://github.com/oliverphilcox/PolyBin) is a Python code for efficient estimation of binned polyspectra on the CMB (or any other spherical field). It can compute the binned power spectrum, bispectrum, and trispectrum of scalar fields, optionally including parity-odd contributions in the latter. This implements the estimators described in [Philcox 2023a](https://arxiv.org/abs/2303.08828), which are minimum variance (under certain assumptions), and can be efficiently computed. The estimators can also fully account for masking and inpainting operations, yielding spectra without contamination from the observational mask. These have been used to compute the Planck parity-odd temperature trispectrum.
+
+Full-Shape-Likelihoods
+-----------------------
+
+The [*Full Shape Likelihoods*](https://github.com/oliverphilcox/full_shape_likelihoods) repository contains Montepython likelihoods for the full-shape analysis of current and future survey data using the CLASS-PT code. The likelihoods include the power spectrum multipoles, the real-space power spectrum, the BAO parameters, and the bispectrum monopoles, optionally including primordial non-Gaussianity. This has been used for various analyses of the BOSS dataset including [Philcox & Ivanov 2022](https://arxiv.org/abs/2112.04515), in conjunction with the below code for computing the relevant correlators.
+
+Spectra Without Windows
 ---------------------
 
-The [*BOSS Without Windows*](https://github.com/oliverphilcox/BOSS-Without-Windows) repository contains the analysis code required to compute the galaxy power spectrum and bispectrum using optimal quadratic and cubic estimators, as descibed in [Philcox 2020b](https://arxiv.org/abs/2012.09389) and [Philcox 2021](https://arxiv.org/abs/2107.06287). The output measurements do not include the survey window functions, thus can be easily compared to theory models. Additionally, they give close-to-minimum-variance measurements of the power spectrum and bispectrum, which is particularly useful on small-scales. The code is written in Python, with some routines borrowed from [nbodykit](https://nbodykit.readthedocs.io/en/latest/). To compute the statistics, one requires only the survey mask, the data, and a random particle catalog. The power spectrum and bispectrum codes have been used in the latest full-shape BOSS DR12 analysis of [Philcox & Ivanov 2022](https://arxiv.org/abs/2112.04515).
+The [*Spectra Without Windows*](https://github.com/oliverphilcox/Spectra-Without-Windows) repository contains the analysis code required to compute the galaxy power spectrum and bispectrum multipoles using optimal quadratic and cubic estimators, as descibed in [Philcox 2020b](https://arxiv.org/abs/2012.09389), [Philcox 2021](https://arxiv.org/abs/2107.06287) and [Ivanov et al. 2023](https://arxiv.org/abs/2302.04414). The output measurements do not include the survey window functions, thus can be easily compared to theory models. Additionally, they give close-to-minimum-variance measurements of the power spectrum and bispectrum, which is particularly useful on small-scales. The code is written in Python, with some routines borrowed from [nbodykit](https://nbodykit.readthedocs.io/en/latest/). To compute the statistics, one requires only the survey mask, the data, and a random particle catalog. The power spectrum and bispectrum codes have been used in the latest full-shape BOSS DR12 analyses including [Philcox & Ivanov 2022](https://arxiv.org/abs/2112.04515).
 
 NPCFs.jl
 ---------
