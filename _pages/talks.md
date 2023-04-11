@@ -5,7 +5,7 @@ permalink: /talks/
 author_profile: true
 ---
 
-17. Hints of Cosmological Parity Violation ([Slides](http://oliverphilcox.github.io/files/parity2.pdf))
+17. Hints of Cosmological Parity Violation ([Slides  (45 min)](http://oliverphilcox.github.io/files/parity2.pdf), [Slides (10 min)](http://oliverphilcox.github.io/files/parity-short.pdf))
 
 16. The Effective Field Theory of Large Scale Structure: A User's Guide ([Slides](http://oliverphilcox.github.io/files/eft_talk.pdf), [Notes](http://oliverphilcox.github.io/files/eft_intro.pdf))
 
