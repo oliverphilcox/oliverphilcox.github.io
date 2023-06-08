@@ -12,7 +12,7 @@ redirect_from:
 PolyBin
 --------
 
-[*PolyBin*](https://github.com/oliverphilcox/PolyBin) is a Python code for efficient estimation of binned polyspectra on the CMB (or any other spherical field). It can compute the binned power spectrum, bispectrum, and trispectrum of scalar fields, optionally including parity-odd contributions in the latter. This implements the estimators described in [Philcox 2023a](https://arxiv.org/abs/2303.08828), which are minimum variance (under certain assumptions), and can be efficiently computed. The estimators can also fully account for masking and inpainting operations, yielding spectra without contamination from the observational mask. These have been used to compute the Planck parity-odd temperature trispectrum.
+[*PolyBin*](https://github.com/oliverphilcox/PolyBin) is a Python code for efficient estimation of binned polyspectra on the CMB (or any other spherical field). It can compute the binned power spectrum, bispectrum, and trispectrum of spin-0 and spin-2 fields, optionally including parity-violating contributions. This implements the estimators described in [Philcox 2023a](https://arxiv.org/abs/2303.08828) and [Philcox 2023c](https://arxiv.org/abs/2306.03915), which are minimum variance (under certain assumptions), and can be efficiently computed. The estimators can also fully account for masking and inpainting operations, yielding spectra without contamination from the observational mask. These have been used to compute the Planck parity-odd temperature trispectrum.
 
 Full-Shape-Likelihoods
 -----------------------
