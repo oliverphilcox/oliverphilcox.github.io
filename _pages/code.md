@@ -9,6 +9,12 @@ redirect_from:
 
 {% include base_path %}
 
+PolyBin3D
+---------
+
+[*PolyBin*](https://github.com/oliverphilcox/PolyBin3D) is a sister-code to 
+[*PolyBin*](https://github.com/oliverphilcox/PolyBin), designed to compute binned polyspectra in three-dimensions (relevant for galaxy surveys and N-body simulations). It can compute the binned power spectrum and bispectrum in redshift-space, and is loosely based on the [*Spectra Without Windows*](https://github.com/oliverphilcox/Spectra-Without-Windows) code, but with a much more modern and user-friendly implementation. The package includes both conventional estimators and more nuanced forms that do not receive bias from window and mask effects.
+
 PolyBin
 --------
 
@@ -39,6 +45,16 @@ CLASS-PT
 
 [CLASS-PT](https://michalychforever.github.com/CLASS-PT) is an extension of [CLASS](https://class-code.net) used to compute one-loop perturbation theory for matter and biased tracers in real and redshift space, described in [Chudaykin et al. 2020](https://arxiv.org/abs/2004.10607). It has been used in a number of works and can be interfaced with the [MontePython](https://github.com/brinckmann/montepython_public) for fast MCMC sampling. Custom-built likelihoods for full-shape power spectrum and bispectrum analyses are available on [Github](https://github.com/oliverphilcox/full_shape_likelihoods).
 
+RascalC
+--------
+
+[RascalC](https://RascalC.readthedocs.io) is a C++ code to quickly compute covariance matrices of galaxy two- and three-point correlation functions in arbitrary survey geometries, based on ([Philcox et al. 2019](https://arxiv.org/abs/1904.11070); [Philcox & Eisenstein 2019](https://arxiv.org/abs/1910.04764)). This is a fast Monte Carlo integrator of the relevant 12-18 dimensional integrals, and has been shown to give highly accurate covariances in a fraction of the time required from mock catalogs, fully taking into account anisotropies from the survey window. Covariances can be computed both for correlation functions in Legendre multipoles, correlation functions in angular bins and jackknife correlation functions. This is currently being used by a number of teams, including eBOSS, and extensive documentation is available online. This code is being used to compute covariances for DESI correlation function analyses.
+
+HIPSTER
+--------
+
+[HIPSTER](https://Hipster.readthedocs.io) (HIgh-k Power Spectrum EstimatoR) is a fast C++ code to compute galaxy power spectra and bispectra from surveys of arbitrary shapes, based on [Philcox & Eisenstein 2020](https://arxiv.org/abs/1912.01010) and [Philcox 2020](http://arxiv.org/abs/2005.01739). These have quadratic order and are optimized for *small-scale* spectral computation, since they use a configuration-space algorithm to compute the spectra as weighted pair counts, rather than using Fast Fourier Transforms (FFTs). As such, they doesn't suffer from many of the common problems of FFTs; aliasing, shot-noise and window function convolution. For computing the power spectrum and bispectrum in cosmological simulations (with periodic boundary conditions), we include a variant of HIPSTER with minimal dependence on random particles. Extensive documentation is provided for HIPSTER, and it can be run in a single line of code. A new branch of HIPSTER is also being used to compute three-dimensional Lyman-alpha power spectra.
+
 Kepler's Goat Herd
 -------------------
 
@@ -48,16 +64,6 @@ EffectiveHalos
 ---------------
 
 [EffectiveHalos](https://EffectiveHalos.readthedocs.io) is a fast Python code to accurately compute the matter power spectrum and halo covariances across a large range of scales using the Effective Halo model developed in [Philcox et al. 2020](https://arxiv.org/abs/2004.09515). The matter power spectrum is *percent-level accurate* for scales between 0.02 and 1 h/Mpc for a variety of cosmologies (and expected to also have good accuracy beyond these scales), and uses Effective Field Theory to generate a model for the quasi-linear power spectrum which is combined with halo model terms. In addition, the code can be used to compute the covariance between halo number counts in two mass bins, or the covariance between halo number counts and the matter power spectrum. This includes all relevant effects; the intrinsic covariance, halo exclusion and super-sample effects. The code is simple to run, with a tutorial and full API documentation available online.
-
-HIPSTER
---------
-
-[HIPSTER](https://Hipster.readthedocs.io) (HIgh-k Power Spectrum EstimatoR) is a fast C++ code to compute galaxy power spectra and bispectra from surveys of arbitrary shapes, based on [Philcox & Eisenstein 2020](https://arxiv.org/abs/1912.01010) and [Philcox 2020](http://arxiv.org/abs/2005.01739). These have quadratic order and are optimized for *small-scale* spectral computation, since they use a configuration-space algorithm to compute the spectra as weighted pair counts, rather than using Fast Fourier Transforms (FFTs). As such, they doesn't suffer from many of the common problems of FFTs; aliasing, shot-noise and window function convolution. For computing the power spectrum and bispectrum in cosmological simulations (with periodic boundary conditions), we include a variant of HIPSTER with minimal dependence on random particles. Extensive documentation is provided for HIPSTER, and it can be run in a single line of code.
-
-RascalC
---------
-
-[RascalC](https://RascalC.readthedocs.io) is a C++ code to quickly compute covariance matrices of galaxy two- and three-point correlation functions in arbitrary survey geometries, based on ([Philcox et al. 2019](https://arxiv.org/abs/1904.11070); [Philcox & Eisenstein 2019](https://arxiv.org/abs/1910.04764)). This is a fast Monte Carlo integrator of the relevant 12-18 dimensional integrals, and has been shown to give highly accurate covariances in a fraction of the time required from mock catalogs, fully taking into account anisotropies from the survey window. Covariances can be computed both for correlation functions in Legendre multipoles, correlation functions in angular bins and jackknife correlation functions. This is currently being used by a number of teams, including eBOSS, and extensive documentation is available online.
 
 HADES
 ------
