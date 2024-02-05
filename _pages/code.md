@@ -12,7 +12,7 @@ redirect_from:
 PolyBin3D
 ---------
 
-[*PolyBin*](https://github.com/oliverphilcox/PolyBin3D) is a sister-code to 
+[*PolyBin3D*](https://github.com/oliverphilcox/PolyBin3D) is a sister-code to 
 [*PolyBin*](https://github.com/oliverphilcox/PolyBin), designed to compute binned polyspectra in three-dimensions (relevant for galaxy surveys and N-body simulations). It can compute the binned power spectrum and bispectrum in redshift-space, and is loosely based on the [*Spectra Without Windows*](https://github.com/oliverphilcox/Spectra-Without-Windows) code, but with a much more modern and user-friendly implementation. The package includes both conventional estimators and more nuanced forms that do not receive bias from window and mask effects.
 
 PolyBin
