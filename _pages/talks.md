@@ -5,6 +5,10 @@ permalink: /talks/
 author_profile: true
 ---
 
+20. Searching for Massive Particles in the CMB ([Slides](http://oliverphilcox.github.io/files/hotspots.pdf))
+
+19. The Galactic Cosmological Collider ([Slides](http://oliverphilcox.github.io/files/galactic_collider.pdf))
+
 18. **Job Talk (2024)**: Galaxy Surveys: A Precision Probe of Inflation ([Slides](http://oliverphilcox.github.io/files/job-talk-24.pdf))
 
 17. Hints of Cosmological Parity Violation ([Slides  (45 min)](http://oliverphilcox.github.io/files/parity2.pdf), [Slides (10 min)](http://oliverphilcox.github.io/files/parity-short.pdf))
