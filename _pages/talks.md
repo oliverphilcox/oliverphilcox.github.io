@@ -5,15 +5,15 @@ permalink: /talks/
 author_profile: true
 ---
 
-20. Searching for Massive Particles in the CMB ([Slides](http://oliverphilcox.github.io/files/hotspots.pdf))
+20. How to Model a Galaxy Survey ([Slides (180 mins)](http://oliverphilcox.github.io/files/cotb24.pdf), [Slides (60 mins)](http://oliverphilcox.github.io/files/eft_talk.pdf), [Notes](http://oliverphilcox.github.io/files/eft_intro.pdf))
 
-19. The Galactic Cosmological Collider ([Slides](http://oliverphilcox.github.io/files/galactic_collider.pdf))
+19. Searching for Massive Particles in the CMB ([Slides](http://oliverphilcox.github.io/files/hotspots.pdf))
 
-18. **Job Talk (2024)**: Galaxy Surveys: A Precision Probe of Inflation ([Slides](http://oliverphilcox.github.io/files/job-talk-24.pdf))
+18. The Galactic Cosmological Collider ([Slides](http://oliverphilcox.github.io/files/galactic_collider.pdf))
 
-17. Hints of Cosmological Parity Violation ([Slides  (45 min)](http://oliverphilcox.github.io/files/parity2.pdf), [Slides (10 min)](http://oliverphilcox.github.io/files/parity-short.pdf))
+17. **Job Talk (2024)**: Galaxy Surveys: A Precision Probe of Inflation ([Slides](http://oliverphilcox.github.io/files/job-talk-24.pdf))
 
-16. The Effective Field Theory of Large Scale Structure: A User's Guide ([Slides](http://oliverphilcox.github.io/files/eft_talk.pdf), [Notes](http://oliverphilcox.github.io/files/eft_intro.pdf))
+16. Hints of Cosmological Parity Violation ([Slides  (45 min)](http://oliverphilcox.github.io/files/parity2.pdf), [Slides (10 min)](http://oliverphilcox.github.io/files/parity-short.pdf))
 
 15. Constraining Inflation with BOSS DR12 ([Slides (technical)](http://oliverphilcox.github.io/files/madrid-inflation.pdf), [Slides (outline)](http://oliverphilcox.github.io/files/safari_inflation.pdf))
 
