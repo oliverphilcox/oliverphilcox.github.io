@@ -5,6 +5,8 @@ permalink: /talks/
 author_profile: true
 ---
 
+21. Particle Colliders in the Sky (High Energy Physics with the CMB Trispectrum) ([Slides](http://oliverphilcox.github.io/files/cmb_4pt.pdf))
+
 20. How to Model a Galaxy Survey ([Slides (180 mins)](http://oliverphilcox.github.io/files/cotb24.pdf), [Slides (60 mins)](http://oliverphilcox.github.io/files/eft_talk.pdf), [Notes](http://oliverphilcox.github.io/files/eft_intro.pdf))
 
 19. Searching for Massive Particles in the CMB ([Slides](http://oliverphilcox.github.io/files/hotspots.pdf))
