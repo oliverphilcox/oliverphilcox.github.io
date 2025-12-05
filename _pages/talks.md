@@ -5,6 +5,8 @@ permalink: /talks/
 author_profile: true
 ---
 
+23. Colliders in the Sky: Constraining Primordial Non-Gaussianity with CMB and LSS Observations ([Slides](http://oliverphilcox.github.io/files/paris-inflation.pdf))
+
 22. An Unofficial DESI Analysis ([Slides](http://oliverphilcox.github.io/files/benasque25.pdf))
 
 21. Particle Colliders in the Sky (High Energy Physics with the CMB Trispectrum) ([Slides](http://oliverphilcox.github.io/files/cmb_4pt.pdf))
