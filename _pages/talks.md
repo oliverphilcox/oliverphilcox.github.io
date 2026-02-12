@@ -5,6 +5,8 @@ permalink: /talks/
 author_profile: true
 ---
 
+24. **Public Talk (2026)**: Echoes from the Beginning: How Galaxies Encode the Early Universe ([Slides](http://oliverphilcox.github.io/files/stanford-outreach-26.pdf), [Video](https://www.youtube.com/live/SK2OxDiCUk8))
+
 23. Colliders in the Sky: Constraining Primordial Non-Gaussianity with CMB and LSS Observations ([Slides](http://oliverphilcox.github.io/files/inflation-paris.pdf))
 
 22. An Unofficial DESI Analysis ([Slides (60 mins)](http://oliverphilcox.github.io/files/benasque25.pdf), [Slides (10 minutes, with new results!)](http://oliverphilcox.github.io/files/santa-barbara26.pdf), [Video](https://online.kitp.ucsb.edu/online/cmblss-c26/philcox))
