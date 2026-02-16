@@ -82,11 +82,11 @@ analytics:
 author:
   name             : "Oliver Philcox"
   avatar           : "headshot_full.jpg"
-  bio              : "Simons Society (Junior Fellow) // Columbia (Postdoc) // Stanford (Acting Assistant Professor)"
-  location         : "New York City"
+  bio              : "Assistant Professor in Physics at Stanford University"
+  location         : "Stanford, CA"
   employer         :
   pubmed           :
-  googlescholar    : # "http://yourfullgooglescholarurl.com"
+  googlescholar    : "https://scholar.google.com/citations?user=_X4TrTgAAAAJ"
   email            : "ohep2@cantab.ac.uk"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
