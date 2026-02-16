@@ -135,6 +135,7 @@ exclude:
   - Gruntfile.js
   - LICENSE
   - README
+  - CLAUDE.md
   - Rakefile
   - assets/js/_main.js
   - assets/js/plugins
