@@ -122,6 +122,7 @@ exclude:
   - images/
   - files/
   - markdown_generator/
+  - assets/jupyter/
 keep_files:
   - CNAME
   - .nojekyll
