@@ -1,0 +1,38 @@
+---
+layout: page
+---
+<div class="post">
+  <article>
+    {% if page.profiles %}
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 my-3">
+        {% for profile in page.profiles %}
+          <div class="col">
+            <div class="text-center">
+              {% if profile.image %}
+                {% if profile.image contains '/' %}
+                  {% assign profile_image_path = profile.image %}
+                {% else %}
+                  {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+                {% endif %}
+                <img
+                  src="{{ profile_image_path | relative_url }}"
+                  alt="{{ profile.name }}"
+                  class="img-fluid rounded-circle mb-3"
+                  style="width: 180px; height: 180px; object-fit: cover;"
+                  loading="eager"
+                >
+              {% endif %}
+              {% if profile.name %}
+                <h5 class="mb-1">{{ profile.name }}</h5>
+              {% endif %}
+              {% if profile.role %}
+                <p class="text-muted mb-0">{{ profile.role }}</p>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+    <div class="clearfix">{{ content }}</div>
+  </article>
+</div>

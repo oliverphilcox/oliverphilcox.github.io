@@ -26,4 +26,6 @@ Previously, I was a Junior Fellow in the [Simons Society of Fellows](https://www
 
 I'm broadly interested in theoretical, statistical, and observational cosmology, particularly as applied to galaxy surveys and the Cosmic Microwave Background. With Mikhail Ivanov and Marko Simonovic, I won the 2024 [New Horizons Prize](http://breakthroughprize.org/News/83) in Physics.
 
+I'm fortunate to work with a fantastic [group](/group/) of students and postdocs at Stanford and beyond.
+
 I have written a brief guide to the [Effective Field Theory of Large Scale Structure](/assets/pdf/eft_intro.pdf), and have a number of public codes on my [GitHub](https://github.com/oliverphilcox).

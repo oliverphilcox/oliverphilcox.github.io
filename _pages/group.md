@@ -1,33 +1,21 @@
 ---
-layout: profiles
+layout: group-grid
 permalink: /group/
 title: Current Group
 nav_title: Group
 nav: true
 nav_order: 6
 profiles:
-  - align: left
+  - name: Cooper Jacobus
+    role: Graduate Student (Rotation)
     image: group/cooper-jacobus.webp
-    image_circular: true
-    more_info: >
-      <p>Cooper Jacobus</p>
-      <p>Graduate Student (Rotation)</p>
-  - align: left
+  - name: Sixiang Yang
+    role: Graduate Student (Rotation)
     image: group/sixiang-yang.jpg
-    image_circular: true
-    more_info: >
-      <p>Sixiang Yang</p>
-      <p>Graduate Student (Rotation)</p>
-  - align: left
+  - name: Hanyue Wang
+    role: Graduate Student (Rotation)
     image: group/generic.png
-    image_circular: true
-    more_info: >
-      <p>Hanyue Wang</p>
-      <p>Graduate Student (Rotation)</p>
-  - align: left
+  - name: Beatriz Tucci
+    role: LITP Postdoctoral Fellow
     image: group/beatriz-tucci.webp
-    image_circular: true
-    more_info: >
-      <p>Beatriz Tucci</p>
-      <p>LITP Postdoctoral Fellow</p>
 ---
