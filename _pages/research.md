@@ -4,7 +4,7 @@ permalink: /research/
 title: Research
 description: An overview of my research interests and key results.
 nav: true
-nav_order: 6
+nav_order: 5
 ---
 
 *Auto-generated summary based on recent publications. See [InspireHEP](https://inspirehep.net/authors/1804679) for a full list of papers.*

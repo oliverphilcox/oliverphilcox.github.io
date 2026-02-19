@@ -4,7 +4,7 @@ permalink: /cv/
 title: CV
 description:
 nav: true
-nav_order: 5
+nav_order: 7
 ---
 
 You can also [download the PDF](/assets/pdf/CV.pdf) directly.

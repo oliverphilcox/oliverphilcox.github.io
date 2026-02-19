@@ -8,7 +8,11 @@ layout: page
         <hr>
         <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
           {% if profile.image %}
-            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+            {% if page.image_base_path %}
+              {% assign profile_image_path = profile.image | prepend: page.image_base_path %}
+            {% else %}
+              {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+            {% endif %}
             {% if profile.image_circular %}
               {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
             {% else %}
