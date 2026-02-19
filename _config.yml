@@ -103,7 +103,7 @@ kramdown:
       line_numbers: false
       start_line: 1
 
-include: ["_pages", "_group"]
+include: ["_pages"]
 exclude:
   - bin/
   - CONTRIBUTING.md
