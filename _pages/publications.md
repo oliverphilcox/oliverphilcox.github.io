@@ -1,16 +1,16 @@
 ---
-layout: archive
-title: "Publications"
+layout: page
 permalink: /publications/
-author_profile: true
+title: Publications
+description: Publications in reverse chronological order, auto-fetched from InspireHEP.
+nav: true
+nav_order: 2
 ---
 
-{% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
-{% endif %}
+{% include bib_search.liquid %}
 
-{% include base_path %}
+<div class="publications">
 
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+{% bibliography %}
+
+</div>
