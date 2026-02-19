@@ -1,0 +1,104 @@
+name: Deploy site
+
+on:
+  push:
+    branches:
+      - master
+      - main
+  workflow_dispatch:
+  schedule:
+    # Re-fetch publications from InspireHEP weekly (Monday 6am UTC)
+    - cron: '0 6 * * 1'
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch publications from InspireHEP
+        run: |
+          curl -s "https://inspirehep.net/api/literature?q=a%20Oliver.H.E.Philcox.1&size=250&sort=mostrecent&format=bibtex" -o _bibliography/papers.bib
+          echo "Fetched $(grep -c '@' _bibliography/papers.bib) publications from InspireHEP"
+
+      - name: Auto-populate code projects from GitHub
+        run: |
+          rm -f _projects/*.md
+          python3 << 'PYEOF'
+          import json, subprocess, os
+          from datetime import datetime, timedelta
+
+          cutoff = (datetime.utcnow() - timedelta(days=3*365)).strftime('%Y-%m-%dT%H:%M:%SZ')
+
+          result = subprocess.run(
+              ['curl', '-s', 'https://api.github.com/users/oliverphilcox/repos?type=owner&per_page=100&sort=pushed'],
+              capture_output=True, text=True
+          )
+          repos = json.loads(result.stdout)
+          exclude = {'oliverphilcox.github.io', 'szifi-hotspot'}
+          repos = [r for r in repos if not r['fork'] and not r.get('archived') and r['name'] not in exclude]
+
+          result2 = subprocess.run(
+              ['curl', '-s', 'https://api.github.com/repos/michalychforever/CLASS-PT'],
+              capture_output=True, text=True
+          )
+          class_pt = json.loads(result2.stdout)
+          repos.append(class_pt)
+
+          repos = [r for r in repos if r.get('pushed_at', '') >= cutoff]
+          repos.sort(key=lambda r: r.get('pushed_at', ''), reverse=True)
+
+          outdir = '_projects'
+          for i, r in enumerate(repos):
+              name = r['name']
+              owner = r.get('owner', {}).get('login', 'oliverphilcox')
+              desc = (r.get('description') or 'No description').replace('"', '\\"')
+              url = f"https://github.com/{owner}/{name}"
+              fname = f"{i+1}_{name.lower().replace('-','_').replace('.','_')}.md"
+              content = f'---\nlayout: page\ntitle: "{name}"\ndescription: "{desc}"\ngithub: {url}\nredirect: {url}\nimportance: {i+1}\n---\n'
+              with open(os.path.join(outdir, fname), 'w') as f:
+                  f.write(content)
+          print(f"Generated {len(repos)} project files (active in last 3 years)")
+          PYEOF
+
+      - name: Generate talk slide thumbnails
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils > /dev/null 2>&1
+          mkdir -p assets/img/talks
+          for pdf in assets/pdf/*.pdf; do
+            [ -f "$pdf" ] || continue
+            base=$(basename "$pdf" .pdf)
+            # Skip CV and non-talk PDFs
+            [ "$base" = "CV" ] && continue
+            [ "$base" = "example_pdf" ] && continue
+            out="assets/img/talks/${base}.png"
+            if [ ! -f "$out" ]; then
+              pdftoppm -png -f 1 -l 1 -r 150 -singlefile "$pdf" "assets/img/talks/${base}" 2>/dev/null && echo "Generated: ${base}.png" || echo "Failed: ${base}"
+            fi
+          done
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3.5"
+          bundler-cache: true
+
+      - name: Install and Build
+        run: |
+          export JEKYLL_ENV=production
+          bundle exec jekyll build
+
+      - name: Purge unused CSS
+        run: |
+          npm install -g purgecss
+          purgecss -c purgecss.config.js
+
+      - name: Deploy
+        if: github.event_name != 'pull_request'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: _site

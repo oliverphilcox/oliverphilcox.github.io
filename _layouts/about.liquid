@@ -1,0 +1,116 @@
+---
+layout: default
+---
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      {% if site.title == 'blank' %}
+        {{ site.first_name }} {{ site.middle_name }}
+        <span class="font-weight-bold">{{ site.last_name }}</span>
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </h1>
+    <p class="desc">{{ page.subtitle }}</p>
+  </header>
+
+  <article>
+    {% if page.profile %}
+      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+        {% if page.profile.image %}
+          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+          {% if page.profile.image_circular %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+          {% else %}
+            {% assign profile_image_class = 'img-fluid z-depth-1
+      rounded' %}
+          {% endif %}
+          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
+      30vw, 95vw"{% endcapture %}
+          {%
+            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+            cache_bust=true
+          %}
+        {% endif %}
+        {% if page.profile.more_info %}
+          <div class="more-info">{{ page.profile.more_info }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="clearfix">{{ content }}</div>
+
+    <!-- News -->
+    {% if page.announcements and page.announcements.enabled %}
+      <h2>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+      </h2>
+      {% include news.liquid limit=true %}
+    {% endif %}
+
+    <!-- Latest posts -->
+    {% if page.latest_posts and page.latest_posts.enabled %}
+      <h2>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+      </h2>
+      {% include latest_posts.liquid %}
+    {% endif %}
+
+    <!-- Navigation boxes -->
+    <div class="row row-cols-2 row-cols-md-4 g-3 my-4">
+      <div class="col">
+        <a href="{{ '/research/' | relative_url }}" class="card hoverable h-100 text-decoration-none">
+          <div class="card-body text-center">
+            <i class="fa-solid fa-flask fa-2x mb-2" style="color: var(--global-theme-color)"></i>
+            <h5 class="card-title mb-0">Research</h5>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="{{ '/code/' | relative_url }}" class="card hoverable h-100 text-decoration-none">
+          <div class="card-body text-center">
+            <i class="fa-solid fa-code fa-2x mb-2" style="color: var(--global-theme-color)"></i>
+            <h5 class="card-title mb-0">Code</h5>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="{{ '/talks/' | relative_url }}" class="card hoverable h-100 text-decoration-none">
+          <div class="card-body text-center">
+            <i class="fa-solid fa-chalkboard-user fa-2x mb-2" style="color: var(--global-theme-color)"></i>
+            <h5 class="card-title mb-0">Talks</h5>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="{{ '/cv/' | relative_url }}" class="card hoverable h-100 text-decoration-none">
+          <div class="card-body text-center">
+            <i class="fa-solid fa-file-lines fa-2x mb-2" style="color: var(--global-theme-color)"></i>
+            <h5 class="card-title mb-0">CV</h5>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Selected papers -->
+    {% if page.selected_papers %}
+      <h2>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Recent Publications</a>
+      </h2>
+      {% include selected_papers.liquid %}
+    {% endif %}
+
+    <!-- Social -->
+    {% if page.social %}
+      <div class="social">
+        <div class="contact-icons">{% social_links %}</div>
+
+        <div class="contact-note">{{ site.contact_note }}</div>
+      </div>
+    {% endif %}
+
+    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
+      {% include newsletter.liquid center=true %}
+    {% endif %}
+  </article>
+</div>

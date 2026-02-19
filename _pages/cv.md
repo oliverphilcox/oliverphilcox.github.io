@@ -1,12 +1,14 @@
 ---
-layout: archive
-title: "CV"
+layout: page
 permalink: /cv/
-author_profile: true
-redirect_from:
-  - /resume
+title: CV
+description:
+nav: true
+nav_order: 5
 ---
 
-{% include base_path %}
+You can also [download the PDF](/assets/pdf/CV.pdf) directly.
 
-The most recent version of my CV can be found [here](http://oliverphilcox.github.io/files/CV.pdf).
+<div class="cv-pdf">
+  <iframe src="/assets/pdf/CV.pdf" width="100%" height="800px" style="border: none;"></iframe>
+</div>
