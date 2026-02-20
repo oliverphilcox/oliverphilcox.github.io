@@ -25,24 +25,26 @@ jobs:
           pip install pyyaml requests
           python3 scripts/generate_pubs.py --config scripts/pubs_config.yaml
 
-      - name: Compile CV PDF
-        run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended cm-super > /dev/null 2>&1
-          cd scripts/cv
-          pdflatex -interaction=nonstopmode CV.tex || true
-          pdflatex -interaction=nonstopmode CV.tex || true
-          ls -la CV.pdf
-          cp CV.pdf ../../assets/pdf/CV.pdf
-          echo "CV compiled and copied to assets/pdf/CV.pdf"
-
-      - name: Push pubs.tex to CV repo and Overleaf
+      - name: Compile CV and push to CV repo and Overleaf
         env:
           CV_REPO_TOKEN: ${{ secrets.CV_REPO_TOKEN }}
           OVERLEAF_TOKEN: ${{ secrets.OVERLEAF_TOKEN }}
         run: |
+          # Clone CV repo (contains CV.tex, talks.tex, resume.cls, etc.)
           git clone https://x-access-token:${CV_REPO_TOKEN}@github.com/oliverphilcox/my-cv.git /tmp/cv-repo
+
+          # Copy freshly generated pubs.tex into CV repo
           cp scripts/cv/pubs.tex /tmp/cv-repo/pubs.tex
+
+          # Install LaTeX and compile
+          sudo apt-get update -qq && sudo apt-get install -y -qq texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended cm-super > /dev/null 2>&1
           cd /tmp/cv-repo
+          pdflatex -interaction=nonstopmode CV.tex || true
+          pdflatex -interaction=nonstopmode CV.tex || true
+          cp CV.pdf $GITHUB_WORKSPACE/assets/pdf/CV.pdf
+          echo "CV compiled and copied to assets/pdf/CV.pdf"
+
+          # Push updated pubs.tex to CV repo and Overleaf
           git config user.email "github-actions@github.com"
           git config user.name "GitHub Actions"
           git add pubs.tex
