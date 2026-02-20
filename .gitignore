@@ -1,2 +1,8 @@
 _site/
 
+# CV build artifacts (generated in CI)
+scripts/cv/pubs.tex
+scripts/cv/CV.pdf
+scripts/cv/CV.aux
+scripts/cv/CV.log
+scripts/cv/CV.out

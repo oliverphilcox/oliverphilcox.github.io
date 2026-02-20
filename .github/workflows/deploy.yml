@@ -22,8 +22,15 @@ jobs:
 
       - name: Fetch publications from InspireHEP
         run: |
-          curl -s "https://inspirehep.net/api/literature?q=a%20Oliver.H.E.Philcox.1&size=250&sort=mostrecent&format=bibtex" -o _bibliography/papers.bib
-          echo "Fetched $(grep -c '@' _bibliography/papers.bib) publications from InspireHEP"
+          pip install pyyaml requests
+          python3 scripts/generate_pubs.py --config scripts/pubs_config.yaml
+
+      - name: Compile CV PDF
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended cm-super > /dev/null 2>&1
+          cd scripts/cv && pdflatex -interaction=nonstopmode CV.tex > /dev/null 2>&1 || true
+          cp scripts/cv/CV.pdf assets/pdf/CV.pdf
+          echo "CV compiled and copied to assets/pdf/CV.pdf"
 
       - name: Auto-populate code projects from GitHub
         run: |
