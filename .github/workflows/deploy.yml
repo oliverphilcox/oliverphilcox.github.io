@@ -38,8 +38,7 @@ jobs:
       - name: Push pubs.tex to CV repo and Overleaf
         env:
           CV_REPO_TOKEN: ${{ secrets.CV_REPO_TOKEN }}
-          OVERLEAF_EMAIL: ${{ secrets.OVERLEAF_EMAIL }}
-          OVERLEAF_PASSWORD: ${{ secrets.OVERLEAF_PASSWORD }}
+          OVERLEAF_TOKEN: ${{ secrets.OVERLEAF_TOKEN }}
         run: |
           git clone https://x-access-token:${CV_REPO_TOKEN}@github.com/oliverphilcox/my-cv.git /tmp/cv-repo
           cp scripts/cv/pubs.tex /tmp/cv-repo/pubs.tex
@@ -52,11 +51,8 @@ jobs:
           else
             git commit -m "Auto-update pubs.tex from website CI"
             git push origin main
-            # Also push to Overleaf git bridge
-            printf '#!/bin/sh\ncase "$1" in *Username*) echo "$OVERLEAF_EMAIL";; *) echo "$OVERLEAF_PASSWORD";; esac\n' > /tmp/git-askpass.sh
-            chmod +x /tmp/git-askpass.sh
-            git remote add overleaf https://git.overleaf.com/5cc0ddc5da19da364d459744
-            GIT_ASKPASS=/tmp/git-askpass.sh git push overleaf main
+            git remote add overleaf https://git:${OVERLEAF_TOKEN}@git.overleaf.com/5cc0ddc5da19da364d459744
+            git push overleaf main
           fi
 
       - name: Auto-populate code projects from GitHub
