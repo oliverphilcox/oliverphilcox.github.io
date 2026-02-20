@@ -53,10 +53,10 @@ jobs:
             git commit -m "Auto-update pubs.tex from website CI"
             git push origin main
             # Also push to Overleaf git bridge
-            git config credential.helper 'store --file /tmp/.git-credentials'
-            printf 'https://%s:%s@git.overleaf.com\n' "$OVERLEAF_EMAIL" "$OVERLEAF_PASSWORD" > /tmp/.git-credentials
+            printf '#!/bin/sh\ncase "$1" in *Username*) echo "$OVERLEAF_EMAIL";; *) echo "$OVERLEAF_PASSWORD";; esac\n' > /tmp/git-askpass.sh
+            chmod +x /tmp/git-askpass.sh
             git remote add overleaf https://git.overleaf.com/5cc0ddc5da19da364d459744
-            git push overleaf main
+            GIT_ASKPASS=/tmp/git-askpass.sh git push overleaf main
           fi
 
       - name: Auto-populate code projects from GitHub
