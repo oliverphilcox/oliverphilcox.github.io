@@ -35,6 +35,30 @@ jobs:
           cp CV.pdf ../../assets/pdf/CV.pdf
           echo "CV compiled and copied to assets/pdf/CV.pdf"
 
+      - name: Push pubs.tex to CV repo and Overleaf
+        env:
+          CV_REPO_TOKEN: ${{ secrets.CV_REPO_TOKEN }}
+          OVERLEAF_EMAIL: ${{ secrets.OVERLEAF_EMAIL }}
+          OVERLEAF_PASSWORD: ${{ secrets.OVERLEAF_PASSWORD }}
+        run: |
+          git clone https://x-access-token:${CV_REPO_TOKEN}@github.com/oliverphilcox/my-cv.git /tmp/cv-repo
+          cp scripts/cv/pubs.tex /tmp/cv-repo/pubs.tex
+          cd /tmp/cv-repo
+          git config user.email "github-actions@github.com"
+          git config user.name "GitHub Actions"
+          git add pubs.tex
+          if git diff --staged --quiet; then
+            echo "No changes to pubs.tex, skipping push"
+          else
+            git commit -m "Auto-update pubs.tex from website CI"
+            git push origin main
+            # Also push to Overleaf git bridge
+            git config credential.helper 'store --file /tmp/.git-credentials'
+            printf 'https://%s:%s@git.overleaf.com\n' "$OVERLEAF_EMAIL" "$OVERLEAF_PASSWORD" > /tmp/.git-credentials
+            git remote add overleaf https://git.overleaf.com/5cc0ddc5da19da364d459744
+            git push overleaf main
+          fi
+
       - name: Auto-populate code projects from GitHub
         run: |
           rm -f _projects/*.md
