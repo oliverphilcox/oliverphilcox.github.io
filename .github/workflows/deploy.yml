@@ -52,7 +52,7 @@ jobs:
             git commit -m "Auto-update pubs.tex from website CI"
             git push origin main
             git remote add overleaf https://git:${OVERLEAF_TOKEN}@git.overleaf.com/5cc0ddc5da19da364d459744
-            git push overleaf main
+            git push overleaf main:master
           fi
 
       - name: Auto-populate code projects from GitHub
