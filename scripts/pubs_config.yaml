@@ -1,0 +1,132 @@
+# Configuration for generate_pubs.py
+# Generates CV publications (pubs.tex) and website bibliography (papers.bib)
+# from INSPIRE-HEP API data for Oliver H.E. Philcox.
+
+author_query: "Oliver.H.E.Philcox.1"
+
+# Papers classified as Contributing Author (by texkey)
+contributing_author:
+  - "Spec-S5:2025uom"
+  - "Beyond-2pt:2024mqz"
+  - "Rogers:2023ezo"
+  - "Abdalla:2022yfr"
+  - "CAMELS:2022xwh"
+  - "Hou:2021ncj"
+  - "Schmittfull:2020trd"
+  - "CAMELS:2020cof"
+  - "eBOSS:2020xwt"
+  - "Chudaykin:2020aoj"
+
+# Papers to exclude entirely (by texkey)
+exclude:
+  - "Philcox:2022lbx"   # PhD thesis
+  - "Philcox:2025lxt"   # Duplicate of Philcox:2025brr (arXiv-only record)
+
+# Papers to highlight on the website with selected=true, bibtex_show=true
+selected_papers:
+  - "Philcox:2025bvj"
+  - "Philcox:2022hkh"
+  - "Philcox:2022sgj"
+  - "Philcox:2021kcw"
+  - "Philcox:2021bwo"
+
+# Per-paper overrides for publication status/info.
+# "status" can be: submitted, accepted, published, book_chapter, white_paper
+# Published papers auto-detected from INSPIRE publication_info take precedence.
+overrides:
+  "Ivanov:2026dvl":
+    status: submitted
+    journal: 'Phys.\,Rev.\,D'
+  "Chudaykin:2025vdh":
+    status: submitted
+    journal: 'Phys.\,Rev.\,D'
+  "Chudaykin:2025lww":
+    status: submitted
+    journal: 'Phys.\,Rev.\,D'
+  "Philcox:2025bbo":
+    status: submitted
+    journal: 'Phys.\,Rev.\,D'
+  "El-Haj:2025zbe":
+    status: submitted
+    journal: 'Phys.\,Rev.\,D'
+  "Bakx:2025pop":
+    status: submitted
+    journal: 'Phys.\,Rev.\,D'
+  "Chudaykin:2025aux":
+    status: accepted
+    journal: 'Phys.\,Rev.\,D'
+  "Philcox:2025faf":
+    status: accepted
+    journal: JCAP
+  "Philcox:2025brr":
+    arxiv_id: "2504.03826"
+  "Coulton:2024vot":
+    status: submitted
+    journal: 'Phys.\,Rev.\,D'
+  "Modi:2023drt":
+    status: submitted
+    journal: 'Phys.\,Rev.\,Lett.'
+  "Philcox:2021hbm":
+    status: submitted
+    journal: 'Phys.\,Rev.\,D'
+  "Ivanov:2023ugs":
+    status: book_chapter
+    verbatim_ref: |-
+      \textit{chapter in ``Hubble Constant Tension'' (Eds. Di Valentino, E. and Brout, D., \href{https://link.springer.com/book/10.1007/978-981-99-0177-7}{Springer}, Singapore)}
+  "Spec-S5:2025uom":
+    status: white_paper
+    verbatim_ref: '\textit{White Paper}'
+  "Philcox:2024mmz":
+    status: published
+    journal: 'Phil.\,Trans.\,Roy.\,Soc.\,A'
+    volume: "383"
+    pages: "2290"
+    year: "2025"
+    doi: "10.1098/rsta.2024.0034"
+  "Philcox:2019kfq":
+    status: published
+    journal: ApJ
+    volume: "887"
+    pages: "9"
+    year: "2019"
+    doi: "10.3847/1538-4357/ab5186"
+
+# Author name overrides (INSPIRE "Last, First" -> formatted LaTeX)
+# For compound surnames that the automatic formatter gets wrong.
+author_name_overrides:
+  "Sirletti, Salvatore Samuele": 'Sirletti, S.\,S.'
+  "El-Haj, Luca H. Abu": 'El-Haj, L.\,H.\,A.'
+  "Nischimichi, Takahiro": 'Nischimichi, T.'
+
+# Title overrides (texkey -> LaTeX title) for papers where INSPIRE title
+# doesn't match the desired CV formatting. Add entries as needed.
+title_overrides: {}
+
+# INSPIRE journal names -> LaTeX abbreviations
+# NB: INSPIRE uses no-space format like "Phys.Rev.D"
+journal_map:
+  "Phys.Rev.D": 'Phys.\,Rev.\,D'
+  "Phys.Rev.Lett.": 'Phys.\,Rev.\,Lett.'
+  "Phys.Rev.X": 'Phys.\,Rev.\,X'
+  "Mon.Not.Roy.Astron.Soc.": MNRAS
+  "JCAP": JCAP
+  "Astrophys.J.": ApJ
+  "Astrophys.J.Suppl.": ApJS
+  "Phys.Lett.B": 'Phys.\,Lett.\,B'
+  "JHEAp": JHEA
+  "Proc.Nat.Acad.Sci.": PNAS
+  "Proc.Roy.Soc.Lond.A": 'Proc.\,Roy.\,Soc.\,A'
+
+# Extra major-author papers not in INSPIRE (verbatim LaTeX, appended at end)
+extra_major_author:
+  - |-
+    \item \textbf{Philcox, O.\,H.\,E.}, Rybizki, J., Gutcke, T., ``On the Optimal Choice of Nucleosynthetic Yields, Initial Mass Function, and Number of SNe\,Ia for Chemical Evolution Modeling\,'', \textit{\href{https://doi.org/10.3847/1538-4357/aac6e4}{ApJ}} \textbf{861}, 40 (2018) (\href{https://arxiv.org/abs/1712.05686}{arXiv}).
+
+# Verbatim LaTeX for the static Other Works section
+other_works: |-
+    \item\textbf{Philcox, O.\,H.\,E.}, ``An Introduction to the EFTofLSS'', \href{https://oliverphilcox.github.io/files/eft_intro.pdf}{\textit{Lecture Notes}}.
+
+# Output paths (relative to the config file's directory)
+output_pubstex: "../../cv/CV/pubs.tex"
+output_pubstex_ci: "cv/pubs.tex"
+output_bibtex: "../_bibliography/papers.bib"
