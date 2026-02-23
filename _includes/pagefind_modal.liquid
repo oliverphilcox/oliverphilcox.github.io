@@ -1,0 +1,25 @@
+{% if site.search_enabled %}
+<div id="pagefind-overlay" onclick="if(event.target===this)closePF()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:9999;padding:10vh 1rem 0;box-sizing:border-box;">
+  <div style="background:var(--global-bg-color,#fff);border-radius:10px;width:100%;max-width:640px;margin:0 auto;max-height:80vh;overflow-y:auto;padding:1rem 1.5rem;">
+    <div id="pagefind-search"></div>
+  </div>
+</div>
+<script>
+  function openPF() {
+    document.getElementById('pagefind-overlay').style.display = 'block';
+    setTimeout(function() {
+      var el = document.querySelector('#pagefind-search input');
+      if (el) el.focus();
+    }, 60);
+  }
+  function closePF() {
+    document.getElementById('pagefind-overlay').style.display = 'none';
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closePF();
+    if ((e.key === 'k' || e.key === 'K') && (e.metaKey || e.ctrlKey)) {
+      e.preventDefault(); openPF();
+    }
+  });
+</script>
+{% endif %}
