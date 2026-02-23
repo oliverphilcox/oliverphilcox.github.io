@@ -2,7 +2,8 @@
 layout: page
 permalink: /cv/
 title: CV
-description:
+description: Curriculum vitae.
+keywords: curriculum vitae resume positions education awards fellowships postdoc Stanford
 nav: true
 nav_order: 7
 ---

@@ -43,9 +43,11 @@ ninja.data = [
         {
           {%- assign title = p.title | escape -%}
           {%- if p.permalink contains "/blog/" -%}{%- assign url = "/blog/" -%} {%- else -%}{%- assign url = p.url -%}{%- endif -%}
+          {%- assign page_desc = p.description | strip_html | strip_newlines | escape -%}
+          {%- if p.keywords -%}{%- assign page_desc = page_desc | append: " " | append: p.keywords | escape -%}{%- endif -%}
           id: "nav-{{ title | slugify }}",
           title: "{{ title }}",
-          description: "{{ p.description | strip_html | strip_newlines | escape }}",
+          description: "{{ page_desc }}",
           section: "Navigation",
           handler: () => {
             window.location.href = "{{ url | relative_url }}";
@@ -69,12 +71,13 @@ ninja.data = [
   {%- for project in site.projects -%}
     {
       {%- assign title = project.title | escape -%}
+      {%- if project.redirect -%}{%- assign project_url = project.redirect -%}{%- else -%}{%- assign project_url = project.url | relative_url -%}{%- endif -%}
       id: "project-{{ title | slugify }}",
       title: "{{ title }}",
       description: "{{ project.description | strip_html | strip_newlines | escape }}",
       section: "Projects",
       handler: () => {
-        window.location.href = "{{ project.url | relative_url }}";
+        window.open("{{ project_url }}", "_blank");
       },
     },
   {%- endfor -%}

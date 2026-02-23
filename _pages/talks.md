@@ -3,6 +3,7 @@ layout: page
 permalink: /talks/
 title: Talks
 description: Selected recent talks with slides and recordings.
+keywords: seminars conferences lectures slides PDF presentations colloquia invited talks
 nav: true
 nav_order: 4
 ---

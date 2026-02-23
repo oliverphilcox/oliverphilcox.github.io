@@ -3,6 +3,7 @@ layout: page
 title: Code
 permalink: /code/
 description: Recent public research codes on GitHub.
+keywords: software GitHub open source Python C++ RascalC PolySpec ENCORE HIPster PolyBin3D covariance matrix estimator
 nav: true
 nav_order: 3
 ---

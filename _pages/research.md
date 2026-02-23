@@ -3,6 +3,7 @@ layout: page
 permalink: /research/
 title: Research
 description: An overview of my research interests and key results.
+keywords: galaxy clustering bispectrum power spectrum CMB primordial non-Gaussianity inflation parity violation Hubble constant dark energy simulation-based inference BOSS DESI Planck cosmological collider neutrino masses trispectrum perturbation theory EFT large-scale structure
 nav: true
 nav_order: 5
 ---
