@@ -14,28 +14,28 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "Publications",
-          description: "Publications in reverse chronological order, auto-fetched from InspireHEP.",
+          description: "Publications in reverse chronological order, auto-fetched from InspireHEP. papers preprints arXiv InspireHEP cosmology astrophysics galaxy survey CMB inflation",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
         },{id: "nav-code",
           title: "Code",
-          description: "Recent public research codes on GitHub.",
+          description: "Recent public research codes on GitHub. software GitHub open source Python C++ RascalC PolySpec ENCORE HIPster PolyBin3D covariance matrix estimator",
           section: "Navigation",
           handler: () => {
             window.location.href = "/code/";
           },
         },{id: "nav-talks",
           title: "Talks",
-          description: "Selected recent talks with slides and recordings.",
+          description: "Selected recent talks with slides and recordings. seminars conferences lectures slides PDF presentations colloquia invited talks",
           section: "Navigation",
           handler: () => {
             window.location.href = "/talks/";
           },
         },{id: "nav-research",
           title: "Research",
-          description: "An overview of my research interests and key results.",
+          description: "An overview of my research interests and key results. galaxy clustering bispectrum power spectrum CMB primordial non-Gaussianity inflation parity violation Hubble constant dark energy simulation-based inference BOSS DESI Planck cosmological collider neutrino masses trispectrum perturbation theory EFT large-scale structure",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
@@ -49,7 +49,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "",
+          description: "Curriculum vitae. curriculum vitae resume positions education awards fellowships postdoc Stanford",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -59,56 +59,56 @@ ninja.data = [{
       description: "RascalC: A Fast Code for Galaxy Covariance Matrix Estimation",
       section: "Projects",
       handler: () => {
-        window.location.href = "/projects/1_rascalc/";
+        window.open("https://github.com/oliverphilcox/RascalC", "_blank");
       },
     },{id: "project-polyspec",
       title: "PolySpec",
       description: "Full-sky estimators for binned polyspectra and primordial template amplitudes",
       section: "Projects",
       handler: () => {
-        window.location.href = "/projects/2_polyspec/";
+        window.open("https://github.com/oliverphilcox/PolySpec", "_blank");
       },
     },{id: "project-encore",
       title: "encore",
       description: "encore: Efficient isotropic 2-, 3- and 4-point correlation functions in C++ and CUDA",
       section: "Projects",
       handler: () => {
-        window.location.href = "/projects/3_encore/";
+        window.open("https://github.com/oliverphilcox/encore", "_blank");
       },
     },{id: "project-class-pt",
       title: "CLASS-PT",
       description: "Nonlinear perturbation theory extension of the Boltzmann code CLASS",
       section: "Projects",
       handler: () => {
-        window.location.href = "/projects/4_class_pt/";
+        window.open("https://github.com/Michalychforever/CLASS-PT", "_blank");
       },
     },{id: "project-polybin3d",
       title: "PolyBin3D",
       description: "Binned polyspectrum estimation for 3D large-scale structure, optionally mask-deconvolved ",
       section: "Projects",
       handler: () => {
-        window.location.href = "/projects/5_polybin3d/";
+        window.open("https://github.com/oliverphilcox/PolyBin3D", "_blank");
       },
     },{id: "project-full-shape-likelihoods",
       title: "full_shape_likelihoods",
       description: "Full-Shape Power Spectrum and Bispectrum Likelihoods",
       section: "Projects",
       handler: () => {
-        window.location.href = "/projects/6_full_shape_likelihoods/";
+        window.open("https://github.com/oliverphilcox/full_shape_likelihoods", "_blank");
       },
     },{id: "project-spectra-without-windows",
       title: "Spectra-Without-Windows",
       description: "Estimators and data for window-free analysis of power spectra and bispectra",
       section: "Projects",
       handler: () => {
-        window.location.href = "/projects/7_spectra_without_windows/";
+        window.open("https://github.com/oliverphilcox/Spectra-Without-Windows", "_blank");
       },
     },{id: "project-hipster",
       title: "HIPSTER",
       description: "HIPSTER: HIgh-k Power SpecTrum and bispectrum EstimatoR",
       section: "Projects",
       handler: () => {
-        window.location.href = "/projects/8_hipster/";
+        window.open("https://github.com/oliverphilcox/HIPSTER", "_blank");
       },
     },{
       id: 'light-theme',
