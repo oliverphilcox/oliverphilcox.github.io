@@ -20,10 +20,8 @@
     <!-- Header -->
     {% include header.liquid %}
 
-    {% include pagefind_modal.liquid %}
-
     <!-- Content -->
-    <div class="container mt-5" role="main" data-pagefind-body>
+    <div class="container mt-5" role="main">
       {% if page.toc and page.toc.sidebar %}
         {% if page.toc.sidebar == 'right' %}
           <div class="row">
