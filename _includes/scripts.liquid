@@ -369,11 +369,9 @@
   <link rel="stylesheet" href="{{ '/pagefind/pagefind-ui.css' | relative_url }}">
   <script src="{{ '/pagefind/pagefind-ui.js' | relative_url }}"></script>
   <script>
-    window.addEventListener('DOMContentLoaded', function() {
-      if (typeof PagefindUI !== 'undefined') {
-        new PagefindUI({ element: '#pagefind-search', showImages: false, resetStyles: false });
-      }
-    });
+    if (typeof PagefindUI !== 'undefined') {
+      new PagefindUI({ element: '#pagefind-search', showImages: false, bundlePath: '/pagefind/' });
+    }
   </script>
 {% endif %}
 
