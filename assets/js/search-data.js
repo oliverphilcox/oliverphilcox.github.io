@@ -61,6 +61,13 @@ ninja.data = [{
       handler: () => {
         window.open("https://github.com/oliverphilcox/RascalC", "_blank");
       },
+    },{id: "project-cosmological-collider-bispectra",
+      title: "cosmological-collider-bispectra",
+      description: "Visualization of the inflationary scalar-exchange bispectra",
+      section: "Projects",
+      handler: () => {
+        window.open("https://github.com/oliverphilcox/cosmological-collider-bispectra", "_blank");
+      },
     },{id: "project-polyspec",
       title: "PolySpec",
       description: "Full-sky estimators for binned polyspectra and primordial template amplitudes",
