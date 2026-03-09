@@ -291,7 +291,8 @@ def _mathml_to_latex(text):
 
 def _fix_title_unicode(title):
     """Fix unicode characters in titles that should be LaTeX."""
-    title = title.replace("\u039b", "\\Lambda")  # Λ
+    title = title.replace("\u039bCDM", "$\\Lambda$CDM")  # ΛCDM
+    title = title.replace("\u039b", "$\\Lambda$")  # standalone Λ
     title = title.replace("\u03b1", "$\\alpha$")  # α
     title = title.replace("\u03b2", "$\\beta$")  # β
     title = title.replace("\u03b3", "$\\gamma$")  # γ
@@ -303,8 +304,8 @@ def _fix_title_unicode(title):
     title = title.replace("\u201d", "''")  # right double quote
     # Escape bare % but avoid double-escaping already-escaped \%
     title = re.sub(r"(?<!\\)%", r"\\%", title)
-    # Fix bare \LambdaCDM -> $\Lambda$CDM
-    title = title.replace("\\LambdaCDM", "$\\Lambda$CDM")
+    # Fix \LambdaCDM -> $\Lambda$CDM (handle optional surrounding $)
+    title = re.sub(r"\$?\\LambdaCDM\$?", r"$\\Lambda$CDM", title)
     return title
 
 
