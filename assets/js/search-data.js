@@ -54,19 +54,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "project-rascalc",
-      title: "RascalC",
-      description: "RascalC: A Fast Code for Galaxy Covariance Matrix Estimation",
-      section: "Projects",
-      handler: () => {
-        window.open("https://github.com/oliverphilcox/RascalC", "_blank");
-      },
-    },{id: "project-cosmological-collider-bispectra",
+        },{id: "project-cosmological-collider-bispectra",
       title: "cosmological-collider-bispectra",
       description: "Visualization of the inflationary scalar-exchange bispectra",
       section: "Projects",
       handler: () => {
         window.open("https://github.com/oliverphilcox/cosmological-collider-bispectra", "_blank");
+      },
+    },{id: "project-rascalc",
+      title: "RascalC",
+      description: "RascalC: A Fast Code for Galaxy Covariance Matrix Estimation",
+      section: "Projects",
+      handler: () => {
+        window.open("https://github.com/oliverphilcox/RascalC", "_blank");
       },
     },{id: "project-polyspec",
       title: "PolySpec",
