@@ -54,7 +54,28 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "project-rascalc",
+        },{id: "project-hipster",
+      title: "HIPSTER",
+      description: "HIPSTER: HIgh-k Power SpecTrum and bispectrum EstimatoR",
+      section: "Projects",
+      handler: () => {
+        window.open("https://github.com/oliverphilcox/HIPSTER", "_blank");
+      },
+    },{id: "project-polyspec",
+      title: "PolySpec",
+      description: "Full-sky estimators for binned polyspectra and primordial template amplitudes",
+      section: "Projects",
+      handler: () => {
+        window.open("https://github.com/oliverphilcox/PolySpec", "_blank");
+      },
+    },{id: "project-oneloopbispectrum",
+      title: "OneLoopBispectrum",
+      description: "Computation of the one-loop bispectrum of galaxies in redshift space",
+      section: "Projects",
+      handler: () => {
+        window.open("https://github.com/oliverphilcox/OneLoopBispectrum", "_blank");
+      },
+    },{id: "project-rascalc",
       title: "RascalC",
       description: "RascalC: A Fast Code for Galaxy Covariance Matrix Estimation",
       section: "Projects",
@@ -67,13 +88,6 @@ ninja.data = [{
       section: "Projects",
       handler: () => {
         window.open("https://github.com/oliverphilcox/cosmological-collider-bispectra", "_blank");
-      },
-    },{id: "project-polyspec",
-      title: "PolySpec",
-      description: "Full-sky estimators for binned polyspectra and primordial template amplitudes",
-      section: "Projects",
-      handler: () => {
-        window.open("https://github.com/oliverphilcox/PolySpec", "_blank");
       },
     },{id: "project-encore",
       title: "encore",
@@ -109,13 +123,6 @@ ninja.data = [{
       section: "Projects",
       handler: () => {
         window.open("https://github.com/oliverphilcox/Spectra-Without-Windows", "_blank");
-      },
-    },{id: "project-hipster",
-      title: "HIPSTER",
-      description: "HIPSTER: HIgh-k Power SpecTrum and bispectrum EstimatoR",
-      section: "Projects",
-      handler: () => {
-        window.open("https://github.com/oliverphilcox/HIPSTER", "_blank");
       },
     },{
       id: 'light-theme',
