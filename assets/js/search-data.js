@@ -68,6 +68,13 @@ ninja.data = [{
       handler: () => {
         window.open("https://github.com/oliverphilcox/PolySpec", "_blank");
       },
+    },{id: "project-cosmological-collider-bispectra",
+      title: "cosmological-collider-bispectra",
+      description: "Visualization of the inflationary scalar-exchange bispectra",
+      section: "Projects",
+      handler: () => {
+        window.open("https://github.com/oliverphilcox/cosmological-collider-bispectra", "_blank");
+      },
     },{id: "project-oneloopbispectrum",
       title: "OneLoopBispectrum",
       description: "Computation of the one-loop bispectrum of galaxies in redshift space",
@@ -81,13 +88,6 @@ ninja.data = [{
       section: "Projects",
       handler: () => {
         window.open("https://github.com/oliverphilcox/RascalC", "_blank");
-      },
-    },{id: "project-cosmological-collider-bispectra",
-      title: "cosmological-collider-bispectra",
-      description: "Visualization of the inflationary scalar-exchange bispectra",
-      section: "Projects",
-      handler: () => {
-        window.open("https://github.com/oliverphilcox/cosmological-collider-bispectra", "_blank");
       },
     },{id: "project-encore",
       title: "encore",
