@@ -10,16 +10,6 @@ nav_order: 5
 
 *Auto-generated summary based on recent publications. See [InspireHEP](https://inspirehep.net/authors/1804679) for a full list of papers.*
 
-## Galaxy Power Spectrum and Bispectrum Analysis
-
-<img src="/assets/img/research_galaxy_ps.png" alt="Galaxy power spectrum and bispectrum measurements" style="float: right; margin: 0 0 1em 1.5em; width: 260px; border-radius: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
-
-I develop optimal, window-free estimators for measuring galaxy clustering statistics and apply them to state-of-the-art survey data. My recent work includes the first joint power spectrum and bispectrum analyses of BOSS and DESI data using one-loop perturbation theory, yielding precise constraints on cosmological parameters including the Hubble constant, neutrino masses, dark energy, and primordial non-Gaussianity.
-
-Key papers: [Ivanov, Sullivan, Chen et al. 2026](https://arxiv.org/abs/2601.16165), [Chudaykin, Ivanov & Philcox 2025](https://arxiv.org/abs/2511.20757), [Philcox & Floss 2025](https://arxiv.org/abs/2404.07249)
-
-<div style="clear: both;"></div>
-
 ## The Cosmological Collider
 
 <img src="/assets/img/research_cosmo_collider.png" alt="Cosmological collider full-sky detection map" style="float: right; margin: 0 0 1em 1.5em; width: 260px; border-radius: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
@@ -40,13 +30,13 @@ Key papers: [Philcox 2026](https://arxiv.org/abs/2603.17004), [Philcox 2025](htt
 
 <div style="clear: both;"></div>
 
-## Parity Violation in Cosmology
+## Galaxy Power Spectrum and Bispectrum Analysis
 
-<img src="/assets/img/research_parity.png" alt="Parity-odd trispectrum measurements from CMB data" style="float: right; margin: 0 0 1em 1.5em; width: 260px; border-radius: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
+<img src="/assets/img/research_galaxy_ps.png" alt="Galaxy power spectrum and bispectrum measurements" style="float: right; margin: 0 0 1em 1.5em; width: 260px; border-radius: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
 
-I conduct systematic searches for parity-violating signatures in both galaxy surveys and the CMB. This includes the first measurement of the parity-odd four-point correlation function from BOSS galaxies and tests of parity using CMB temperature and polarization bispectra.
+I develop optimal, window-free estimators for measuring galaxy clustering statistics and apply them to state-of-the-art survey data. My recent work includes the first joint power spectrum and bispectrum analyses of BOSS and DESI data using one-loop perturbation theory, yielding precise constraints on cosmological parameters including the Hubble constant, neutrino masses, dark energy, and primordial non-Gaussianity.
 
-Key papers: [Philcox 2022](https://arxiv.org/abs/2206.04227), [Philcox 2023](https://arxiv.org/abs/2303.12106), [Philcox & Shiraishi 2024](https://arxiv.org/abs/2308.03831)
+Key papers: [Ivanov, Sullivan, Chen et al. 2026](https://arxiv.org/abs/2601.16165), [Chudaykin, Ivanov & Philcox 2025](https://arxiv.org/abs/2511.20757), [Philcox & Floss 2025](https://arxiv.org/abs/2404.07249)
 
 <div style="clear: both;"></div>
 
@@ -57,6 +47,16 @@ Key papers: [Philcox 2022](https://arxiv.org/abs/2206.04227), [Philcox 2023](htt
 I use the galaxy bispectrum from BOSS and DESI data -- analyzed within the framework of the effective field theory of large-scale structure -- to constrain models of single-field and multifield inflation. This work provides some of the tightest constraints on primordial non-Gaussianity parameters from galaxy clustering.
 
 Key papers: [Cabass, Ivanov, Philcox et al. 2022](https://arxiv.org/abs/2201.07238), [Cabass, Ivanov & Philcox 2022](https://arxiv.org/abs/2204.01781), [Chudaykin, Ivanov & Philcox 2025](https://arxiv.org/abs/2512.04266)
+
+<div style="clear: both;"></div>
+
+## Parity Violation in Cosmology
+
+<img src="/assets/img/research_parity.png" alt="Parity-odd trispectrum measurements from CMB data" style="float: right; margin: 0 0 1em 1.5em; width: 260px; border-radius: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
+
+I conduct systematic searches for parity-violating signatures in both galaxy surveys and the CMB. This includes the first measurement of the parity-odd four-point correlation function from BOSS galaxies and tests of parity using CMB temperature and polarization bispectra.
+
+Key papers: [Philcox 2022](https://arxiv.org/abs/2206.04227), [Philcox 2023](https://arxiv.org/abs/2303.12106), [Philcox & Shiraishi 2024](https://arxiv.org/abs/2308.03831)
 
 <div style="clear: both;"></div>
 
