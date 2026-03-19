@@ -26,7 +26,7 @@ Key papers: [Ivanov, Sullivan, Chen et al. 2026](https://arxiv.org/abs/2601.1616
 
 I search for signatures of massive particles produced during cosmic inflation -- the "cosmological collider" program. Using both galaxy survey data (BOSS power spectrum and bispectrum) and CMB higher-point functions, I constrain the masses and spins of particles present during inflation, opening a unique observational window into ultra-high-energy particle physics.
 
-Key papers: [Cabass, Philcox, Ivanov et al. 2025](https://arxiv.org/abs/2404.01894), [Philcox, Kumar & Hill 2025](https://arxiv.org/abs/2405.03738), [Goldstein, Philcox, Hill & Hui 2024](https://arxiv.org/abs/2407.08731)
+Key papers: [Philcox, Pimentel & Yang 2026](https://arxiv.org/abs/2603.13486), [Cabass, Philcox, Ivanov et al. 2025](https://arxiv.org/abs/2404.01894), [Philcox, Kumar & Hill 2025](https://arxiv.org/abs/2405.03738)
 
 <div style="clear: both;"></div>
 
@@ -36,7 +36,7 @@ Key papers: [Cabass, Philcox, Ivanov et al. 2025](https://arxiv.org/abs/2404.018
 
 I build efficient optimal estimators for the CMB bispectrum and trispectrum on the full sky, applicable to both scalar and tensor perturbations. I have used these to place the first constraints on the primordial trispectrum from Planck data, to search for tensor and mixed tensor-scalar non-Gaussianity, and to constrain arbitrary primordial bispectrum shapes.
 
-Key papers: [Philcox 2025](https://arxiv.org/abs/2502.04434), [Philcox 2025](https://arxiv.org/abs/2502.06931), [Philcox, Zhong & Sirletti 2025](https://arxiv.org/abs/2511.19179)
+Key papers: [Philcox 2026](https://arxiv.org/abs/2603.17004), [Philcox 2025](https://arxiv.org/abs/2502.04434), [Philcox, Zhong & Sirletti 2025](https://arxiv.org/abs/2511.19179)
 
 <div style="clear: both;"></div>
 
