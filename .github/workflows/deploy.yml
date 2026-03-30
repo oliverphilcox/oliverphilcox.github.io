@@ -25,10 +25,9 @@ jobs:
           pip install pyyaml requests
           python3 scripts/generate_pubs.py --config scripts/pubs_config.yaml
 
-      - name: Compile CV and push to CV repo and Overleaf
+      - name: Compile CV
         env:
           CV_REPO_TOKEN: ${{ secrets.CV_REPO_TOKEN }}
-          OVERLEAF_TOKEN: ${{ secrets.OVERLEAF_TOKEN }}
         run: |
           # Clone CV repo (contains CV.tex, talks.tex, resume.cls, etc.)
           git clone https://x-access-token:${CV_REPO_TOKEN}@github.com/oliverphilcox/my-cv.git /tmp/cv-repo
@@ -44,7 +43,13 @@ jobs:
           cp CV.pdf $GITHUB_WORKSPACE/assets/pdf/CV.pdf
           echo "CV compiled and copied to assets/pdf/CV.pdf"
 
-          # Push updated pubs.tex to CV repo and Overleaf
+      - name: Push pubs.tex to CV repo and Overleaf
+        continue-on-error: true
+        env:
+          CV_REPO_TOKEN: ${{ secrets.CV_REPO_TOKEN }}
+          OVERLEAF_TOKEN: ${{ secrets.OVERLEAF_TOKEN }}
+        run: |
+          cd /tmp/cv-repo
           git config user.email "github-actions@github.com"
           git config user.name "GitHub Actions"
           git add pubs.tex
@@ -56,7 +61,7 @@ jobs:
             git remote add overleaf https://git:${OVERLEAF_TOKEN}@git.overleaf.com/5cc0ddc5da19da364d459744
             git fetch overleaf master
             git rebase overleaf/master
-            git push overleaf main:master
+            git push overleaf main:master || git push --force overleaf main:master
           fi
 
       - name: Auto-populate code projects from GitHub
