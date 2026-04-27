@@ -61,6 +61,20 @@ ninja.data = [{
       handler: () => {
         window.open("https://github.com/oliverphilcox/HIPSTER", "_blank");
       },
+    },{id: "project-rascalc",
+      title: "RascalC",
+      description: "RascalC: A Fast Code for Galaxy Covariance Matrix Estimation",
+      section: "Projects",
+      handler: () => {
+        window.open("https://github.com/oliverphilcox/RascalC", "_blank");
+      },
+    },{id: "project-polybin3d",
+      title: "PolyBin3D",
+      description: "Binned polyspectrum estimation for 3D large-scale structure, optionally mask-deconvolved ",
+      section: "Projects",
+      handler: () => {
+        window.open("https://github.com/oliverphilcox/PolyBin3D", "_blank");
+      },
     },{id: "project-class-pt",
       title: "CLASS-PT",
       description: "Nonlinear perturbation theory extension of the Boltzmann code CLASS",
@@ -89,26 +103,12 @@ ninja.data = [{
       handler: () => {
         window.open("https://github.com/oliverphilcox/OneLoopBispectrum", "_blank");
       },
-    },{id: "project-rascalc",
-      title: "RascalC",
-      description: "RascalC: A Fast Code for Galaxy Covariance Matrix Estimation",
-      section: "Projects",
-      handler: () => {
-        window.open("https://github.com/oliverphilcox/RascalC", "_blank");
-      },
     },{id: "project-encore",
       title: "encore",
       description: "encore: Efficient isotropic 2-, 3- and 4-point correlation functions in C++ and CUDA",
       section: "Projects",
       handler: () => {
         window.open("https://github.com/oliverphilcox/encore", "_blank");
-      },
-    },{id: "project-polybin3d",
-      title: "PolyBin3D",
-      description: "Binned polyspectrum estimation for 3D large-scale structure, optionally mask-deconvolved ",
-      section: "Projects",
-      handler: () => {
-        window.open("https://github.com/oliverphilcox/PolyBin3D", "_blank");
       },
     },{id: "project-full-shape-likelihoods",
       title: "full_shape_likelihoods",
