@@ -67,11 +67,8 @@ ISSUE_AS_PAGES_JOURNALS = {
     "Proc.Roy.Soc.Lond.A",
 }
 
-# Maximum number of authors before truncating in contributing-author section
+# Maximum number of authors before truncating; papers with >this get first N + et al.
 CONTRIB_AUTHOR_TRUNCATE = 6
-
-# If Philcox is within first N authors, list up to and including Philcox
-CONTRIB_PHILCOX_CUTOFF = 6
 
 
 # ---------------------------------------------------------------------------
@@ -517,16 +514,6 @@ def format_reference(paper, config):
 # ---------------------------------------------------------------------------
 
 
-def format_author_list_major(paper, config):
-    """Format author list for Major Author papers: list all authors."""
-    authors = paper.get("authors", [])
-    author_overrides = config.get("author_name_overrides", {}) or {}
-    parts = []
-    for a in authors:
-        parts.append(format_author_name(a.get("full_name", ""), author_overrides))
-    return ", ".join(parts)
-
-
 def _find_philcox_position(authors):
     for i, a in enumerate(authors):
         if is_philcox_author(a.get("full_name", "")):
@@ -534,32 +521,42 @@ def _find_philcox_position(authors):
     return None
 
 
-def format_author_list_contributing(paper, config):
-    """Format author list for Contributing Author papers.
+def _format_authors_truncated(paper, config):
+    """Format author list with uniform truncation rule.
 
     - <=6 authors: list all
-    - >6 authors with Philcox in first 6: list up to Philcox, then et al.
-    - >6 authors with Philcox later: first author + et al. (inc. Philcox)
+    - >6 authors: list first 6 then et al.
+    - If Philcox is not in the first 6, append "(inc. Philcox)".
     """
     authors = paper.get("authors", [])
     n = len(authors)
+    author_overrides = config.get("author_name_overrides", {}) or {}
 
     if n <= CONTRIB_AUTHOR_TRUNCATE:
-        return format_author_list_major(paper, config)
+        parts = [
+            format_author_name(a.get("full_name", ""), author_overrides) for a in authors
+        ]
+        return ", ".join(parts)
 
-    author_overrides = config.get("author_name_overrides", {}) or {}
+    parts = [
+        format_author_name(a.get("full_name", ""), author_overrides)
+        for a in authors[:CONTRIB_AUTHOR_TRUNCATE]
+    ]
+    suffix = r", \textit{et al.}"
+
     pos = _find_philcox_position(authors)
+    if pos is None or pos >= CONTRIB_AUTHOR_TRUNCATE:
+        suffix += r" (inc.\,\," + PHILCOX_BOLD + ")"
 
-    if pos is not None and pos < CONTRIB_PHILCOX_CUTOFF:
-        # Show authors up to and including Philcox, then et al.
-        parts = []
-        for a in authors[: pos + 1]:
-            parts.append(format_author_name(a.get("full_name", ""), author_overrides))
-        return ", ".join(parts) + r", \textit{et al.}"
-    else:
-        # First author + et al. (inc. Philcox)
-        first = format_author_name(authors[0].get("full_name", ""), author_overrides)
-        return first + r", \textit{et al.} (inc.\,\," + PHILCOX_BOLD + ")"
+    return ", ".join(parts) + suffix
+
+
+def format_author_list_major(paper, config):
+    return _format_authors_truncated(paper, config)
+
+
+def format_author_list_contributing(paper, config):
+    return _format_authors_truncated(paper, config)
 
 
 # ---------------------------------------------------------------------------
