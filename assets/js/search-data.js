@@ -61,12 +61,12 @@ ninja.data = [{
       handler: () => {
         window.open("https://github.com/oliverphilcox/HIPSTER", "_blank");
       },
-    },{id: "project-rascalc",
-      title: "RascalC",
-      description: "RascalC: A Fast Code for Galaxy Covariance Matrix Estimation",
+    },{id: "project-cosmological-collider-bispectra",
+      title: "cosmological-collider-bispectra",
+      description: "Visualization of the inflationary scalar-exchange bispectra",
       section: "Projects",
       handler: () => {
-        window.open("https://github.com/oliverphilcox/RascalC", "_blank");
+        window.open("https://github.com/oliverphilcox/cosmological-collider-bispectra", "_blank");
       },
     },{id: "project-polybin3d",
       title: "PolyBin3D",
@@ -74,6 +74,13 @@ ninja.data = [{
       section: "Projects",
       handler: () => {
         window.open("https://github.com/oliverphilcox/PolyBin3D", "_blank");
+      },
+    },{id: "project-rascalc",
+      title: "RascalC",
+      description: "RascalC: A Fast Code for Galaxy Covariance Matrix Estimation",
+      section: "Projects",
+      handler: () => {
+        window.open("https://github.com/oliverphilcox/RascalC", "_blank");
       },
     },{id: "project-class-pt",
       title: "CLASS-PT",
@@ -88,13 +95,6 @@ ninja.data = [{
       section: "Projects",
       handler: () => {
         window.open("https://github.com/oliverphilcox/PolySpec", "_blank");
-      },
-    },{id: "project-cosmological-collider-bispectra",
-      title: "cosmological-collider-bispectra",
-      description: "Visualization of the inflationary scalar-exchange bispectra",
-      section: "Projects",
-      handler: () => {
-        window.open("https://github.com/oliverphilcox/cosmological-collider-bispectra", "_blank");
       },
     },{id: "project-oneloopbispectrum",
       title: "OneLoopBispectrum",
