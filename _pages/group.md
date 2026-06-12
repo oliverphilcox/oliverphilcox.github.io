@@ -7,7 +7,7 @@ nav: true
 nav_order: 6
 profiles:
   - name: Cooper Jacobus
-    role: Graduate Student (Rotation)
+    role: Graduate Student
     image: group/cooper-jacobus.webp
   - name: Beatriz Tucci
     role: LITP Postdoctoral Fellow
@@ -16,6 +16,6 @@ profiles:
     role: Graduate Student (Rotation)
     image: group/generic.png
   - name: Sixiang Yang
-    role: Graduate Student (Rotation)
+    role: Graduate Student
     image: group/sixiang-yang.jpg
 ---
