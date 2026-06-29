@@ -13,6 +13,7 @@ nav_order: 4
 {% assign talks = "
 cosmoverse26|2026|Colliders in the Sky: Constraining High-Energy Physics with CMB and LSS Observations|[Slides](/assets/pdf/cosmoverse26.pdf), [Video](https://youtu.be/hsyD9QblQyY);
 ias26|2026|The Cosmological Collider: An Observational Perspective|[Slides](/assets/pdf/ias26.pdf);
+croucher26|2026|Primordial Non-Gaussianity (Croucher Advanced Study Institute, Hong Kong)|[Video (Part I)](https://www.youtube.com/watch?v=WOG0QXlaTPw&list=PLH7utuukElLbtFtgJ5OPPh87Bkc-rT0DC&index=10), [Video (Part II)](https://www.youtube.com/watch?v=O1IJeXQYO8o&list=PLH7utuukElLbtFtgJ5OPPh87Bkc-rT0DC&index=11);
 stanford-outreach-26|Public Talk (2026)|Echoes from the Beginning: How Galaxies Encode the Early Universe|[Slides](/assets/pdf/stanford-outreach-26.pdf), [Video](https://www.youtube.com/watch?v=SK2OxDiCUk8);
 benasque25|2025|An Unofficial DESI Analysis|[Slides (60 mins)](/assets/pdf/benasque25.pdf), [Slides (10 mins)](/assets/pdf/santa-barbara26.pdf), [Video](https://online.kitp.ucsb.edu/online/cmblss-c26/philcox);
 cmb_4pt|2024|Particle Colliders in the Sky (High Energy Physics with the CMB Trispectrum)|[Slides](/assets/pdf/cmb_4pt.pdf);
