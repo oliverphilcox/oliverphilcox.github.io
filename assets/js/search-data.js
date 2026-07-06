@@ -68,6 +68,13 @@ ninja.data = [{
       handler: () => {
         window.open("https://github.com/oliverphilcox/RascalC", "_blank");
       },
+    },{id: "project-class-pt",
+      title: "CLASS-PT",
+      description: "Nonlinear perturbation theory extension of the Boltzmann code CLASS",
+      section: "Projects",
+      handler: () => {
+        window.open("https://github.com/Michalychforever/CLASS-PT", "_blank");
+      },
     },{id: "project-cosmological-collider-bispectra",
       title: "cosmological-collider-bispectra",
       description: "Visualization of the inflationary scalar-exchange bispectra",
@@ -81,13 +88,6 @@ ninja.data = [{
       section: "Projects",
       handler: () => {
         window.open("https://github.com/oliverphilcox/PolyBin3D", "_blank");
-      },
-    },{id: "project-class-pt",
-      title: "CLASS-PT",
-      description: "Nonlinear perturbation theory extension of the Boltzmann code CLASS",
-      section: "Projects",
-      handler: () => {
-        window.open("https://github.com/Michalychforever/CLASS-PT", "_blank");
       },
     },{id: "project-polyspec",
       title: "PolySpec",
