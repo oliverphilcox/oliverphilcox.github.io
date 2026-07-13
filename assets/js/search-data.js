@@ -54,12 +54,26 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "project-hipster",
+        },{id: "project-spectra-without-windows",
+      title: "Spectra-Without-Windows",
+      description: "Estimators and data for window-free analysis of power spectra and bispectra",
+      section: "Projects",
+      handler: () => {
+        window.open("https://github.com/oliverphilcox/Spectra-Without-Windows", "_blank");
+      },
+    },{id: "project-hipster",
       title: "HIPSTER",
       description: "HIPSTER: HIgh-k Power SpecTrum and bispectrum EstimatoR",
       section: "Projects",
       handler: () => {
         window.open("https://github.com/oliverphilcox/HIPSTER", "_blank");
+      },
+    },{id: "project-binned-bispectrum-shape",
+      title: "Binned-Bispectrum-Shape",
+      description: "Planck shape function reconstruction (from arXiv:2603.17004)",
+      section: "Projects",
+      handler: () => {
+        window.open("https://github.com/oliverphilcox/Binned-Bispectrum-Shape", "_blank");
       },
     },{id: "project-rascalc",
       title: "RascalC",
@@ -116,13 +130,6 @@ ninja.data = [{
       section: "Projects",
       handler: () => {
         window.open("https://github.com/oliverphilcox/full_shape_likelihoods", "_blank");
-      },
-    },{id: "project-spectra-without-windows",
-      title: "Spectra-Without-Windows",
-      description: "Estimators and data for window-free analysis of power spectra and bispectra",
-      section: "Projects",
-      handler: () => {
-        window.open("https://github.com/oliverphilcox/Spectra-Without-Windows", "_blank");
       },
     },{
       id: 'light-theme',
