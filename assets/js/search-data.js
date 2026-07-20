@@ -68,6 +68,13 @@ ninja.data = [{
       handler: () => {
         window.open("https://github.com/oliverphilcox/HIPSTER", "_blank");
       },
+    },{id: "project-polyspec",
+      title: "PolySpec",
+      description: "Full-sky estimators for binned polyspectra and primordial template amplitudes",
+      section: "Projects",
+      handler: () => {
+        window.open("https://github.com/oliverphilcox/PolySpec", "_blank");
+      },
     },{id: "project-binned-bispectrum-shape",
       title: "Binned-Bispectrum-Shape",
       description: "Planck shape function reconstruction (from arXiv:2603.17004)",
@@ -102,13 +109,6 @@ ninja.data = [{
       section: "Projects",
       handler: () => {
         window.open("https://github.com/oliverphilcox/PolyBin3D", "_blank");
-      },
-    },{id: "project-polyspec",
-      title: "PolySpec",
-      description: "Full-sky estimators for binned polyspectra and primordial template amplitudes",
-      section: "Projects",
-      handler: () => {
-        window.open("https://github.com/oliverphilcox/PolySpec", "_blank");
       },
     },{id: "project-oneloopbispectrum",
       title: "OneLoopBispectrum",
