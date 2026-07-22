@@ -23,7 +23,13 @@ layout: page
                 >
               {% endif %}
               {% if profile.name %}
-                <h5 class="mb-1">{{ profile.name }}</h5>
+                <h5 class="mb-1">
+                  {% if profile.link %}
+                    <a href="{{ profile.link }}" target="_blank" rel="noopener">{{ profile.name }}</a>
+                  {% else %}
+                    {{ profile.name }}
+                  {% endif %}
+                </h5>
               {% endif %}
               {% if profile.role %}
                 <p class="text-muted mb-0">{{ profile.role }}</p>
