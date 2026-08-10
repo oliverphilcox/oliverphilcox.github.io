@@ -68,6 +68,13 @@ ninja.data = [{
       handler: () => {
         window.open("https://github.com/oliverphilcox/HIPSTER", "_blank");
       },
+    },{id: "project-polybin3d",
+      title: "PolyBin3D",
+      description: "Binned polyspectrum estimation for 3D large-scale structure, optionally mask-deconvolved ",
+      section: "Projects",
+      handler: () => {
+        window.open("https://github.com/oliverphilcox/PolyBin3D", "_blank");
+      },
     },{id: "project-class-pt",
       title: "CLASS-PT",
       description: "Nonlinear perturbation theory extension of the Boltzmann code CLASS",
@@ -102,13 +109,6 @@ ninja.data = [{
       section: "Projects",
       handler: () => {
         window.open("https://github.com/oliverphilcox/cosmological-collider-bispectra", "_blank");
-      },
-    },{id: "project-polybin3d",
-      title: "PolyBin3D",
-      description: "Binned polyspectrum estimation for 3D large-scale structure, optionally mask-deconvolved ",
-      section: "Projects",
-      handler: () => {
-        window.open("https://github.com/oliverphilcox/PolyBin3D", "_blank");
       },
     },{id: "project-oneloopbispectrum",
       title: "OneLoopBispectrum",
