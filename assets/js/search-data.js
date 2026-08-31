@@ -68,6 +68,13 @@ ninja.data = [{
       handler: () => {
         window.open("https://github.com/oliverphilcox/HIPSTER", "_blank");
       },
+    },{id: "project-rascalc",
+      title: "RascalC",
+      description: "RascalC: A Fast Code for Galaxy Covariance Matrix Estimation",
+      section: "Projects",
+      handler: () => {
+        window.open("https://github.com/oliverphilcox/RascalC", "_blank");
+      },
     },{id: "project-class-pt",
       title: "CLASS-PT",
       description: "Nonlinear perturbation theory extension of the Boltzmann code CLASS",
@@ -95,13 +102,6 @@ ninja.data = [{
       section: "Projects",
       handler: () => {
         window.open("https://github.com/oliverphilcox/Binned-Bispectrum-Shape", "_blank");
-      },
-    },{id: "project-rascalc",
-      title: "RascalC",
-      description: "RascalC: A Fast Code for Galaxy Covariance Matrix Estimation",
-      section: "Projects",
-      handler: () => {
-        window.open("https://github.com/oliverphilcox/RascalC", "_blank");
       },
     },{id: "project-cosmological-collider-bispectra",
       title: "cosmological-collider-bispectra",
