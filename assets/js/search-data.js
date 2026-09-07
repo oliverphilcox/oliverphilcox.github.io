@@ -68,19 +68,19 @@ ninja.data = [{
       handler: () => {
         window.open("https://github.com/oliverphilcox/HIPSTER", "_blank");
       },
-    },{id: "project-rascalc",
-      title: "RascalC",
-      description: "RascalC: A Fast Code for Galaxy Covariance Matrix Estimation",
-      section: "Projects",
-      handler: () => {
-        window.open("https://github.com/oliverphilcox/RascalC", "_blank");
-      },
     },{id: "project-class-pt",
       title: "CLASS-PT",
       description: "Nonlinear perturbation theory extension of the Boltzmann code CLASS",
       section: "Projects",
       handler: () => {
         window.open("https://github.com/Michalychforever/CLASS-PT", "_blank");
+      },
+    },{id: "project-rascalc",
+      title: "RascalC",
+      description: "RascalC: A Fast Code for Galaxy Covariance Matrix Estimation",
+      section: "Projects",
+      handler: () => {
+        window.open("https://github.com/oliverphilcox/RascalC", "_blank");
       },
     },{id: "project-polybin3d",
       title: "PolyBin3D",
