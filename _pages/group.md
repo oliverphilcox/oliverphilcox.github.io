@@ -6,6 +6,10 @@ nav_title: Group
 nav: true
 nav_order: 6
 profiles:
+  - name: Dhayaa Anbajagane
+    role: NASA Einstein Fellow
+    image: group/dhayaa-anbajagane.jpg
+    link: https://inspirehep.net/authors/1886596
   - name: Cooper Jacobus
     role: Graduate Student
     image: group/cooper-jacobus.webp
@@ -14,10 +18,6 @@ profiles:
     role: LITP Postdoctoral Fellow
     image: group/beatriz-tucci.webp
     link: https://inspirehep.net/authors/1814729
-  - name: Dhayaa Anbajagane
-    role: NASA Einstein Fellow
-    image: group/dhayaa-anbajagane.jpg
-    link: https://inspirehep.net/authors/1886596
   - name: Sixiang Yang
     role: Graduate Student
     image: group/sixiang-yang.jpg
