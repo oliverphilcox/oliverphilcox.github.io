@@ -14,10 +14,10 @@ profiles:
     role: LITP Postdoctoral Fellow
     image: group/beatriz-tucci.webp
     link: https://inspirehep.net/authors/1814729
-  - name: Hanyue Wang
-    role: Graduate Student (Rotation)
-    image: group/generic.png
-    link: https://orcid.org/0009-0009-3082-8021
+  - name: Dhayaa Anbajagane
+    role: NASA Einstein Fellow
+    image: group/dhayaa-anbajagane.jpg
+    link: https://inspirehep.net/authors/1886596
   - name: Sixiang Yang
     role: Graduate Student
     image: group/sixiang-yang.jpg
