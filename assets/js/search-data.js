@@ -77,7 +77,7 @@ ninja.data = [{
       },
     },{id: "project-unequaltime",
       title: "UnequalTime",
-      description: "Unequal time power spectra a la Zvonimir et al.",
+      description: "Unequal time power spectra",
       section: "Projects",
       handler: () => {
         window.open("https://github.com/oliverphilcox/UnequalTime", "_blank");
