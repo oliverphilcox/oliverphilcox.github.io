@@ -1,0 +1,120 @@
+# Configuration for generate_research.py
+# Builds _pages/research.md from INSPIRE-HEP data for Oliver H.E. Philcox.
+#
+# The thematic prose ("blurb") and images are HUMAN-CURATED and must not be
+# machine-written. Only the "Key papers" lists are auto-generated: for each
+# theme the script takes the union of (a) the pinned arXiv ids and (b) papers
+# whose INSPIRE title matches the theme's keywords, then shows the most recent
+# `max_per_theme`. New papers therefore appear automatically once INSPIRE
+# indexes them; pins guarantee the current curated selection stays correct even
+# where keyword matching is imperfect. Use `exclude` to block a stray match.
+
+author_query: "Oliver.H.E.Philcox.1"
+author_id: "1804679"          # INSPIRE author record for the intro link
+max_per_theme: 3
+max_authors: 12               # skip large-collaboration papers unless pinned
+
+themes:
+  - key: collider
+    title: "The Cosmological Collider"
+    image: "/assets/img/research_cosmo_collider.png"
+    alt: "Cosmological collider full-sky detection map"
+    blurb: >-
+      I search for signatures of massive particles produced during cosmic
+      inflation -- the "cosmological collider" program. Using both galaxy survey
+      data (BOSS power spectrum and bispectrum) and CMB higher-point functions, I
+      constrain the masses and spins of particles present during inflation,
+      opening a unique observational window into ultra-high-energy particle
+      physics. My recent work extends these searches to the cosmic microwave
+      background and critically assesses how well collider signatures can
+      actually be measured from current data.
+    keywords: ["collider", "massive particle", "particle production", "unparticle"]
+    pin: ["2607.18369", "2607.12010", "2404.01894"]
+    exclude: []
+
+  - key: cmb_hpf
+    title: "CMB Higher-Point Functions"
+    image: "/assets/img/research_cmb_hpf.png"
+    alt: "CMB bispectrum constraint results"
+    blurb: >-
+      I build efficient optimal estimators for the CMB bispectrum and trispectrum
+      on the full sky, applicable to both scalar and tensor perturbations. I have
+      used these to place the first constraints on the primordial trispectrum from
+      Planck data, to search for tensor and mixed tensor-scalar non-Gaussianity,
+      and to constrain arbitrary primordial bispectrum shapes without assuming a
+      fixed template.
+    keywords: ["cosmic microwave background", "cmb trispectrum", "cmb bispectrum", "primordial trispectrum", "primordial bispectr", "inflationary bispectrum"]
+    pin: ["2603.17004", "2511.19179", "2502.04434"]
+    exclude: []
+
+  - key: galaxy_ps
+    title: "Galaxy Power Spectrum and Bispectrum Analysis"
+    image: "/assets/img/research_galaxy_ps.png"
+    alt: "Galaxy power spectrum and bispectrum measurements"
+    blurb: >-
+      I develop optimal, window-free estimators for measuring galaxy clustering
+      statistics and apply them to state-of-the-art survey data. My recent work
+      includes joint power spectrum and bispectrum analyses of BOSS and DESI DR1
+      data within perturbation theory -- now extended to two-loop order --
+      yielding precise constraints on cosmological parameters including the Hubble
+      constant, neutrino masses, dark energy, and primordial non-Gaussianity.
+    keywords: ["galaxy power spectrum", "power spectrum and bispectrum", "redshift-space galaxy", "galaxy trispectrum", "eftoflss", "full-shape", "two-loop", "galaxy clustering"]
+    pin: ["2610.13867", "2507.13433", "2601.16165"]
+    exclude: []
+
+  - key: inflation
+    title: "Inflation from Galaxy Surveys"
+    image: "/assets/img/research_inflation.png"
+    alt: "Primordial non-Gaussianity constraints from DESI galaxies"
+    blurb: >-
+      I use the galaxy bispectrum from BOSS and DESI data -- analyzed within the
+      framework of the effective field theory of large-scale structure -- to
+      constrain models of single-field and multifield inflation, including
+      searches for equilateral, folded, and oscillatory primordial signals. This
+      work provides some of the tightest constraints on primordial non-Gaussianity
+      parameters from galaxy clustering.
+    keywords: ["folded primordial", "primordial oscillatory", "oscillatory features", "constraints on inflation", "single-field inflation", "multifield", "non-gaussianity from"]
+    pin: ["2610.10530", "2512.04266", "2607.15337"]
+    exclude: []
+
+  - key: parity
+    title: "Parity Violation in Cosmology"
+    image: "/assets/img/research_parity.png"
+    alt: "Parity-odd trispectrum measurements from CMB data"
+    blurb: >-
+      I conduct systematic searches for parity-violating signatures in both galaxy
+      surveys and the CMB. This includes the first measurement of the parity-odd
+      four-point correlation function from BOSS galaxies, a careful assessment of
+      whether that signal could arise from sample variance, and tests of parity
+      using CMB temperature and polarization bispectra.
+    keywords: ["parity"]
+    pin: ["2401.09523", "2308.03831", "2206.04227"]
+    exclude: []
+
+  - key: hubble_de
+    title: "The Hubble Constant and Dark Energy"
+    image: "/assets/img/research_hubble.png"
+    alt: "Modified Hubble expansion rate from topological boundaries"
+    blurb: >-
+      I have pioneered sound-horizon-independent measurements of the Hubble
+      constant using the matter-radiation equality scale from galaxy surveys, CMB
+      lensing, and supernovae. More recently, I have used full-shape galaxy
+      clustering analyses of DESI data to constrain dark energy, spatial
+      curvature, and neutrino masses, and to test beyond-LCDM physics.
+    keywords: ["hubble constant", "dark energy", "w_0w_a", "baryon-cdm", "spatial curvature", "neutrino mass", "sound horizon", "suppression without thawing"]
+    pin: ["2511.20757", "2507.00115", "2406.13388"]
+    exclude: []
+
+  - key: sbi
+    title: "Simulation-Based Inference"
+    image: "/assets/img/research_sbi.png"
+    alt: "Hybrid simulation-based inference posterior comparison"
+    blurb: >-
+      I develop hybrid simulation-based inference methods that combine analytic
+      likelihoods with neural network emulators, enabling more robust cosmological
+      analyses that go beyond traditional summary statistics -- including the
+      simulation-based priors now used in state-of-the-art DESI full-shape
+      analyses.
+    keywords: ["simulation-based", "hybrid sbi", "learn the likelihood", "neural cellular", "emulat"]
+    pin: ["2602.18554", "2505.13591", "2309.10270"]
+    exclude: []
