@@ -54,7 +54,14 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "project-spectra-without-windows",
+        },{id: "project-full-shape-likelihoods",
+      title: "full_shape_likelihoods",
+      description: "Full-Shape Power Spectrum and Bispectrum Likelihoods",
+      section: "Projects",
+      handler: () => {
+        window.open("https://github.com/oliverphilcox/full_shape_likelihoods", "_blank");
+      },
+    },{id: "project-spectra-without-windows",
       title: "Spectra-Without-Windows",
       description: "Estimators and data for window-free analysis of power spectra and bispectra",
       section: "Projects",
@@ -67,6 +74,13 @@ ninja.data = [{
       section: "Projects",
       handler: () => {
         window.open("https://github.com/oliverphilcox/HIPSTER", "_blank");
+      },
+    },{id: "project-unequaltime",
+      title: "UnequalTime",
+      description: "Unequal time power spectra a la Zvonimir et al.",
+      section: "Projects",
+      handler: () => {
+        window.open("https://github.com/oliverphilcox/UnequalTime", "_blank");
       },
     },{id: "project-rascalc",
       title: "RascalC",
@@ -123,13 +137,6 @@ ninja.data = [{
       section: "Projects",
       handler: () => {
         window.open("https://github.com/oliverphilcox/encore", "_blank");
-      },
-    },{id: "project-full-shape-likelihoods",
-      title: "full_shape_likelihoods",
-      description: "Full-Shape Power Spectrum and Bispectrum Likelihoods",
-      section: "Projects",
-      handler: () => {
-        window.open("https://github.com/oliverphilcox/full_shape_likelihoods", "_blank");
       },
     },{
       id: 'light-theme',
