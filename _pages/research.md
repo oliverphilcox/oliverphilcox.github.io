@@ -8,7 +8,7 @@ nav: true
 nav_order: 5
 ---
 
-*Auto-generated summary based on recent publications. See [InspireHEP](https://inspirehep.net/authors/1804679) for a full list of papers.*
+*Auto-generated from recent publications. See [InspireHEP](https://inspirehep.net/authors/1804679) for a full list of papers.*
 
 ## The Cosmological Collider
 
@@ -36,7 +36,7 @@ Key papers: [Philcox 2026](https://arxiv.org/abs/2603.17004), [Philcox, Zhong & 
 
 I develop optimal, window-free estimators for measuring galaxy clustering statistics and apply them to state-of-the-art survey data. My recent work includes joint power spectrum and bispectrum analyses of BOSS and DESI DR1 data within perturbation theory -- now extended to two-loop order -- yielding precise constraints on cosmological parameters including the Hubble constant, neutrino masses, dark energy, and primordial non-Gaussianity.
 
-Key papers: [Philcox 2026](https://arxiv.org/abs/2610.13867), [Chudaykin, Ivanov & Philcox 2025](https://arxiv.org/abs/2507.13433), [Ivanov, Sullivan, de Belsunce et al. 2026](https://arxiv.org/abs/2601.16165)
+Key papers: [Philcox 2026](https://arxiv.org/abs/2610.13867), [Ivanov, Sullivan, de Belsunce et al. 2026](https://arxiv.org/abs/2601.16165), [Chudaykin, Ivanov & Philcox 2025](https://arxiv.org/abs/2507.13433)
 
 <div style="clear: both;"></div>
 
@@ -46,7 +46,7 @@ Key papers: [Philcox 2026](https://arxiv.org/abs/2610.13867), [Chudaykin, Ivanov
 
 I use the galaxy bispectrum from BOSS and DESI data -- analyzed within the framework of the effective field theory of large-scale structure -- to constrain models of single-field and multifield inflation, including searches for equilateral, folded, and oscillatory primordial signals. This work provides some of the tightest constraints on primordial non-Gaussianity parameters from galaxy clustering.
 
-Key papers: [Chen, Chudaykin, Ivanov et al. 2026](https://arxiv.org/abs/2610.10530), [Chudaykin, Ivanov & Philcox 2025](https://arxiv.org/abs/2512.04266), [Yang & Philcox 2026](https://arxiv.org/abs/2607.15337)
+Key papers: [Chen, Chudaykin, Ivanov et al. 2026](https://arxiv.org/abs/2610.10530), [Yang & Philcox 2026](https://arxiv.org/abs/2607.15337), [Chudaykin, Ivanov & Philcox 2025](https://arxiv.org/abs/2512.04266)
 
 <div style="clear: both;"></div>
 
@@ -56,7 +56,7 @@ Key papers: [Chen, Chudaykin, Ivanov et al. 2026](https://arxiv.org/abs/2610.105
 
 I conduct systematic searches for parity-violating signatures in both galaxy surveys and the CMB. This includes the first measurement of the parity-odd four-point correlation function from BOSS galaxies, a careful assessment of whether that signal could arise from sample variance, and tests of parity using CMB temperature and polarization bispectra.
 
-Key papers: [Philcox & Ereza 2024](https://arxiv.org/abs/2401.09523), [Philcox & Shiraishi 2024](https://arxiv.org/abs/2308.03831), [Philcox 2022](https://arxiv.org/abs/2206.04227)
+Key papers: [Philcox & Ereza 2024](https://arxiv.org/abs/2401.09523), [Philcox & Shiraishi 2023](https://arxiv.org/abs/2308.03831), [Philcox 2022](https://arxiv.org/abs/2206.04227)
 
 <div style="clear: both;"></div>
 
@@ -66,7 +66,7 @@ Key papers: [Philcox & Ereza 2024](https://arxiv.org/abs/2401.09523), [Philcox &
 
 I have pioneered sound-horizon-independent measurements of the Hubble constant using the matter-radiation equality scale from galaxy surveys, CMB lensing, and supernovae. More recently, I have used full-shape galaxy clustering analyses of DESI data to constrain dark energy, spatial curvature, and neutrino masses, and to test beyond-LCDM physics.
 
-Key papers: [Chudaykin, Ivanov & Philcox 2025](https://arxiv.org/abs/2511.20757), [Philcox, Silverstein & Torroba 2025](https://arxiv.org/abs/2507.00115), [Chen, Ivanov, Philcox & Wenzl 2024](https://arxiv.org/abs/2406.13388)
+Key papers: [Smith, Ivanov, de Belsunce et al. 2026](https://arxiv.org/abs/2609.10794), [Chudaykin, Ivanov & Philcox 2025](https://arxiv.org/abs/2511.20757), [Philcox, Silverstein & Torroba 2025](https://arxiv.org/abs/2507.00115)
 
 <div style="clear: both;"></div>
 
@@ -76,6 +76,6 @@ Key papers: [Chudaykin, Ivanov & Philcox 2025](https://arxiv.org/abs/2511.20757)
 
 I develop hybrid simulation-based inference methods that combine analytic likelihoods with neural network emulators, enabling more robust cosmological analyses that go beyond traditional summary statistics -- including the simulation-based priors now used in state-of-the-art DESI full-shape analyses.
 
-Key papers: [Chudaykin, Ivanov & Philcox 2026](https://arxiv.org/abs/2602.18554), [Zhang, Modi & Philcox 2025](https://arxiv.org/abs/2505.13591), [Modi & Philcox 2023](https://arxiv.org/abs/2309.10270)
+Key papers: [Jacobus, Tucci & Philcox 2026](https://arxiv.org/abs/2607.27320), [Chudaykin, Ivanov & Philcox 2026](https://arxiv.org/abs/2602.18554), [Zhang, Modi & Philcox 2025](https://arxiv.org/abs/2505.13591)
 
 <div style="clear: both;"></div>

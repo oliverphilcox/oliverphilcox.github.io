@@ -25,6 +25,11 @@ jobs:
           pip install pyyaml requests
           python3 scripts/generate_pubs.py --config scripts/pubs_config.yaml
 
+      - name: Regenerate research page from InspireHEP
+        continue-on-error: true
+        run: |
+          python3 scripts/generate_research.py --config scripts/research_config.yaml
+
       - name: Compile CV
         env:
           CV_REPO_TOKEN: ${{ secrets.CV_REPO_TOKEN }}
