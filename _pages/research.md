@@ -12,7 +12,7 @@ nav_order: 5
 
 ## The Cosmological Collider
 
-<img src="/assets/img/research_cosmo_collider.png" alt="Cosmological collider signal in the galaxy bispectrum" style="float: right; margin: 0 0 1em 1.5em; width: 260px; border-radius: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
+<img src="/assets/img/research_cosmo_collider.png" alt="Cosmological collider interaction diagrams: self-, single-, double-, and triple-exchange of a massive field" style="float: right; margin: 0 0 1em 1.5em; width: 260px; border-radius: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
 
 I search for signatures of massive particles produced during cosmic inflation -- the "cosmological collider" program. Using both galaxy survey data (BOSS power spectrum and bispectrum) and CMB higher-point functions, I constrain the masses and spins of particles present during inflation, opening a unique observational window into ultra-high-energy particle physics. My recent work extends these searches to the cosmic microwave background and critically assesses how well collider signatures can actually be measured from current data.
 
