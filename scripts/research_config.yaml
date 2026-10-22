@@ -18,7 +18,7 @@ themes:
   - key: collider
     title: "The Cosmological Collider"
     image: "/assets/img/research_cosmo_collider.png"
-    alt: "Cosmological collider full-sky detection map"
+    alt: "Exclusion limits on inflationary particle-production couplings"
     blurb: >-
       I search for signatures of massive particles produced during cosmic
       inflation -- the "cosmological collider" program. Using both galaxy survey
