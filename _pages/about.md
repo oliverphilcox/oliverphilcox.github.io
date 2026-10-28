@@ -28,4 +28,4 @@ I'm broadly interested in theoretical, statistical, and observational cosmology,
 
 I'm fortunate to work with a fantastic [group](/group/) of students and postdocs at Stanford and beyond.
 
-I have written a brief guide to the [Effective Field Theory of Large Scale Structure](/assets/pdf/eft_intro.pdf), and have a number of public codes on my [GitHub](https://github.com/oliverphilcox).
+I have written a brief guide to the [Effective Field Theory of Large Scale Structure](/assets/pdf/eft_intro.pdf) and lecture notes on [Graduate Cosmology](/assets/pdf/graduate_cosmology.pdf), and have a number of public codes on my [GitHub](https://github.com/oliverphilcox).
