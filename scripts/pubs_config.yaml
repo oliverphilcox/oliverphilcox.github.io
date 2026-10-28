@@ -8,14 +8,11 @@ author_query: "Oliver.H.E.Philcox.1"
 contributing_author:
   - "Spec-S5:2025uom"
   - "Beyond-2pt:2024mqz"
-  - "Rogers:2023ezo"
   - "Abdalla:2022yfr"
   - "CAMELS:2022xwh"
-  - "Hou:2021ncj"
-  - "Schmittfull:2020trd"
   - "CAMELS:2020cof"
-  - "eBOSS:2020xwt"
-  - "Chudaykin:2020aoj"
+  # Rogers:2023ezo, Hou:2021ncj, Schmittfull:2020trd, eBOSS:2020xwt, Chudaykin:2020aoj
+  # moved to Major Author (to match the hand-curated CV-osp classification).
 
 # Papers to exclude entirely (by texkey)
 exclude:
