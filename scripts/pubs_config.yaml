@@ -124,7 +124,8 @@ extra_major_author:
 
 # Verbatim LaTeX for the static Other Works section
 other_works: |-
-    \item\textbf{Philcox, O.\,H.\,E.}, ``An Introduction to the EFTofLSS'', \href{https://oliverphilcox.github.io/files/eft_intro.pdf}{\textit{Lecture Notes}}.
+    \item\textbf{Philcox, O.\,H.\,E.}, \href{https://oliverphilcox.github.io/assets/pdf/graduate_cosmology.pdf}{\textit{Graduate Cosmology}} (2026).
+    \item\textbf{Philcox, O.\,H.\,E.}, \href{https://oliverphilcox.github.io/assets/pdf/eft_intro.pdf}{\textit{An Introduction to the EFTofLSS}} (2023).
 
 # Output paths (relative to the config file's directory)
 output_pubstex: "../../cv/CV/pubs.tex"
