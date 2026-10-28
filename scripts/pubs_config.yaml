@@ -31,6 +31,42 @@ selected_papers:
 # "status" can be: submitted, accepted, published, book_chapter, white_paper
 # Published papers auto-detected from INSPIRE publication_info take precedence.
 overrides:
+  "Philcox:2026myi":
+    status: submitted
+    journal: 'Phys.\,Rev.\,D'
+  "Chen:2026gxp":
+    status: submitted
+    journal: 'Phys.\,Rev.\,D'
+  "Tucci:2026wzg":
+    status: submitted
+    journal: 'Phys.\,Rev.\,D'
+  "Smith:2026bmb":
+    status: submitted
+    journal: 'Phys.\,Rev.\,D'
+  "Chudaykin:2026amr":
+    status: accepted
+    journal: JCAP
+  "Jacobus:2026tlm":
+    status: submitted
+    journal: 'Phys.\,Rev.\,D'
+  "Philcox:2026tjj":
+    status: submitted
+    journal: 'Phys.\,Rev.\,D'
+  "Yang:2026mip":
+    status: submitted
+    journal: 'Phys.\,Rev.\,D'
+  "Philcox:2026rpn":
+    status: submitted
+    journal: 'Phys.\,Rev.\,Lett.'
+  "Jense:2026haw":
+    status: accepted
+    journal: 'Phys.\,Rev.\,D'
+  "Chen:2026usz":
+    status: submitted
+    journal: 'Phys.\,Rev.\,Lett.'
+  "Philcox:2026njr":
+    status: submitted
+    journal: 'Phys.\,Rev.\,D'
   "Ivanov:2026dvl":
     status: submitted
     journal: 'Phys.\,Rev.\,D'
@@ -93,11 +129,14 @@ overrides:
 author_name_overrides:
   "Sirletti, Salvatore Samuele": 'Sirletti, S.\,S.'
   "El-Haj, Luca H. Abu": 'El-Haj, L.\,H.\,A.'
-  "Nischimichi, Takahiro": 'Nischimichi, T.'
+  "Nischimichi, Takahiro": 'Nishimichi, T.'
+  "Simonovic, Marko": "Simonovi\\'c, M."
 
 # Title overrides (texkey -> LaTeX title) for papers where INSPIRE title
 # doesn't match the desired CV formatting. Add entries as needed.
-title_overrides: {}
+title_overrides:
+  "Philcox:2021bwo": 'encore: an $\mathcal{O}(N_g^2)$ estimator for galaxy N-point correlation functions'
+  "Rogers:2023ezo": 'Ultra-light axions and the $S_8$ tension: joint constraints from the cosmic microwave background and galaxy clustering'
 
 # INSPIRE journal names -> LaTeX abbreviations
 # NB: INSPIRE uses no-space format like "Phys.Rev.D"
