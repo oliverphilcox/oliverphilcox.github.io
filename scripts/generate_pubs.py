@@ -593,6 +593,21 @@ def format_item(paper, config, is_contributing=False):
 # ---------------------------------------------------------------------------
 
 
+def fetch_citation_count(arxiv_id):
+    """Fetch the citation count for a single paper by arXiv id (0 on failure)."""
+    url = "https://inspirehep.net/api/literature"
+    params = {"q": f"arxiv:{arxiv_id}", "fields": "citation_count", "size": 1}
+    try:
+        resp = requests.get(url, params=params, timeout=30)
+        resp.raise_for_status()
+        hits = resp.json()["hits"]["hits"]
+        if hits:
+            return int(hits[0]["metadata"].get("citation_count", 0) or 0)
+    except Exception as e:
+        print(f"  (extra citation fetch failed for {arxiv_id}: {e})", file=sys.stderr)
+    return 0
+
+
 def generate_pubstex(papers, config):
     """Generate the full pubs.tex content."""
     major = []
@@ -608,13 +623,18 @@ def generate_pubstex(papers, config):
         else:
             major.append(paper)
 
-    # --- Summary metrics (major + contributing only, so excluded entries
-    #     such as the PhD thesis are not counted) ---
+    # --- Summary metrics: major + contributing (so excluded entries such as the
+    #     PhD thesis are not counted) PLUS any extra_major_author papers that the
+    #     author query misses (counted, with citations fetched individually) ---
     counted = major + contributing
-    n_pubs = len(counted)
-    cites = sorted(
-        (int(p.get("citation_count", 0) or 0) for p in counted), reverse=True
-    )
+    cite_list = [int(p.get("citation_count", 0) or 0) for p in counted]
+    extras = config.get("extra_major_author", []) or []
+    for extra in extras:
+        m = re.search(r"arxiv\.org/abs/([0-9.]+)", extra)
+        if m:
+            cite_list.append(fetch_citation_count(m.group(1)))
+    n_pubs = len(counted) + len(extras)
+    cites = sorted(cite_list, reverse=True)
     total_cites = sum(cites)
     h_index = 0
     for i, c in enumerate(cites, start=1):
