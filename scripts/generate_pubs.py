@@ -14,6 +14,7 @@ import os
 import re
 import sys
 import time
+from datetime import datetime
 
 import requests
 import yaml
@@ -607,10 +608,36 @@ def generate_pubstex(papers, config):
         else:
             major.append(paper)
 
+    # --- Summary metrics (major + contributing only, so excluded entries
+    #     such as the PhD thesis are not counted) ---
+    counted = major + contributing
+    n_pubs = len(counted)
+    cites = sorted(
+        (int(p.get("citation_count", 0) or 0) for p in counted), reverse=True
+    )
+    total_cites = sum(cites)
+    h_index = 0
+    for i, c in enumerate(cites, start=1):
+        if c >= i:
+            h_index = i
+        else:
+            break
+    asof = datetime.now().strftime("%B %Y")
+
     lines = []
 
+    # --- Metrics line + alphabetized-author note ---
+    lines.append(
+        rf"\textbf{{{n_pubs} Publications}} \quad$\bullet$\quad "
+        rf"\textbf{{{total_cites} Citations}} \quad$\bullet$\quad "
+        rf"\textbf{{$h$-index {h_index}}} \quad "
+        rf"{{\small\textit{{(INSPIRE, {asof})}}}}"
+    )
+    lines.append("")
+    lines.append(r"\textit{* = Author list alphabetized}\\\\")
+
     # --- Major Author ---
-    lines.append(r"\textit{\textbf{Major Author}}")
+    lines.append(r"\textbf{\textsc{Major Author}}")
     lines.append(r"\begin{enumerate}")
     for paper in major:
         lines.append(format_item(paper, config, is_contributing=False))
@@ -623,7 +650,7 @@ def generate_pubstex(papers, config):
     lines.append("")
 
     # --- Contributing Author ---
-    lines.append(r"\textit{\textbf{Contributing Author}}")
+    lines.append(r"\textbf{\textsc{Contributing Author}}")
     lines.append("")
     lines.append(r"\begin{enumerate}[resume]")
     for paper in contributing:
@@ -633,8 +660,8 @@ def generate_pubstex(papers, config):
     lines.append(r"\vskip 4 pt ")
     lines.append("")
 
-    # --- Other Works ---
-    lines.append(r"\textit{\textbf{Other Works}}")
+    # --- Lecture Notes / Other Works ---
+    lines.append(r"\textbf{\textsc{Lecture Notes}}")
     lines.append(r"\begin{enumerate}[resume]")
     other_works = config.get("other_works", "")
     lines.append(other_works.rstrip())
