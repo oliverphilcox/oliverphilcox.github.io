@@ -75,6 +75,13 @@ ninja.data = [{
       handler: () => {
         window.open("https://github.com/oliverphilcox/HIPSTER", "_blank");
       },
+    },{id: "project-rascalc",
+      title: "RascalC",
+      description: "RascalC: A Fast Code for Galaxy Covariance Matrix Estimation",
+      section: "Projects",
+      handler: () => {
+        window.open("https://github.com/oliverphilcox/RascalC", "_blank");
+      },
     },{id: "project-polyspec",
       title: "PolySpec",
       description: "Full-sky estimators for binned polyspectra and primordial template amplitudes",
@@ -88,13 +95,6 @@ ninja.data = [{
       section: "Projects",
       handler: () => {
         window.open("https://github.com/oliverphilcox/UnequalTime", "_blank");
-      },
-    },{id: "project-rascalc",
-      title: "RascalC",
-      description: "RascalC: A Fast Code for Galaxy Covariance Matrix Estimation",
-      section: "Projects",
-      handler: () => {
-        window.open("https://github.com/oliverphilcox/RascalC", "_blank");
       },
     },{id: "project-class-pt",
       title: "CLASS-PT",
